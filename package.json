@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Litterly-CTP/Litterly-Web/issues"
   },
-  "homepage": "https://github.com/Litterly-CTP/Litterly-Web#readme"
+  "homepage": "https://github.com/Litterly-CTP/Litterly-Web#readme",
+  "dependencies": {
+    "firebase-admin": "^8.7.0"
+  }
 }
