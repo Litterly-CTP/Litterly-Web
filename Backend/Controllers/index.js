@@ -1,20 +1,12 @@
 const admin = require('firebase-admin');
+const { config } = require('../credentials.js');
 
-// initialize an instance of Cloud Firestore
-//TODO: get the litterly json file
-const serviceAccount = require('./litterlyFile.json');
 
-// TODO: get the firebase sdk for litterly
-//connecting to firebase backend 
-const firebaseConfig = {
-    credential: admin.credential.cert(serviceAccount)
-};
-
-admin.initializeApp(firebaseConfig);
-
+admin.initializeApp(config);
 let db = admin.firestore();
 
-db.collection('Users').doc("user").get()
+
+db.collection('GeofenceData').doc("sparkyevangelista@gmail.com").get()
     .then((snapshot) => {
         console.log(snapshot.data());
     })

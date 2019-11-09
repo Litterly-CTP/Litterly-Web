@@ -1,0 +1,3 @@
+#ignore the credentials for firebase auth and google cloud
+./Backend/credentials.js
+./Backend/litterly.json
