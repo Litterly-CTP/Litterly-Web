@@ -1,0 +1,27 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url("../Images/landing_pg_bg.svg");
+    background-size: 100%;
+}
+
+#navBrand {
+    font-size: 2rem;
+}
+
+#mainNavbar .navbar-brand {
+    font-size: 2.75rem;
+}
+
+#mainNavbar .nav-link {
+    font-size: 2rem;
+}
+
+#mainNavBar .navbar-nav {
+    text-align: right;
+}
+
+#downloadButton {
+    color: white;
+    margin-top: 20px;
+    margin-right: 40px;
+}
