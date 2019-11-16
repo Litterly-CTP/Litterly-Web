@@ -62,17 +62,31 @@ body {
 
 .md-white-bold-text {
     color: white;
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 1.7rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
     text-align: center;
 }
 
 #mobile-app {
     margin-top: 525px;
+    text-align: center;
+    color: white;
 }
 
 .content-box {
     width: 200px;
     height: 150px;
     background-color: #353A50;
+    text-align: center;
+    margin: auto;
+}
+
+.info-icons {
+    margin-top: 25px;
+}
+
+#phone-img {
+    width: 300px;
+    height: auto;
 }
