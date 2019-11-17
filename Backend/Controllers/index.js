@@ -1,17 +1,9 @@
-const admin = require('firebase-admin');
-const { config } = require('../credentials.js');
-// const meetups = ;
 const app = require('express')();
 
-/*
-    This file is going to hold all of the routes 
-    in the controllers folder./
-*/
+app.use('/meetups', require('./schedule.js'));
 
-//firebase init
-admin.initializeApp(config);
-let db = admin.firestore();
 
-app.use('/meetups', require('./meetups.js'));
+app.listen(3000, () => {
+    console.log('it hits');
+})
 
-exports.modules = db;

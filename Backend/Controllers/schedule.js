@@ -1,42 +1,46 @@
 const express = require('express');
-const db = require('./index');
+const { db } = require('../services/firestore.js');
 const router = express.Router();
 
+//this is the route that is going to show on the google maps
+router.get('/tags', (req, res) => {
+    db.collection("TaggedTrash")
+        .then(res => console.log(res.data()));
+})
 
-router.get("/plastic", (res, req) => {
-    db.collection('Meetups').doc('40.839630126953125-73.86263781760073meetup').get()
+router.get("/plastic", (req, res) => {
+    db.collection('Meetups').doc('40.753753662109375-73.99363984062525meetup').get()
         .then(res => {
             console.log(res.data());
         })
 })
 
+// router.get("/metal", (res, req) => {
 
-router.get("/metal", (res, req) => {
-
-})
-
-
-router.get("/organics", (res, req) => {
-
-})
+// })
 
 
-router.post("/plastic", (res, req) => {
+// router.get("/organics", (res, req) => {
 
-})
-
-
-router.post("/metal", (res, req) => {
-
-})
+// })
 
 
-router.post("/organics", (res, req) => {
+// router.post("/plastic", (res, req) => {
 
-})
+// })
 
 
-exports.default = router;
+// router.post("/metal", (res, req) => {
+
+// })
+
+
+// router.post("/organics", (res, req) => {
+
+// })
+
+
+module.exports = router;
 
 
 

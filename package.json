@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Litterly-CTP/Litterly-Web#readme",
   "dependencies": {
-    "firebase-admin": "^8.7.0"
+    "firebase-admin": "^8.7.0",
+    "nodemon": "^1.19.4"
   }
 }
