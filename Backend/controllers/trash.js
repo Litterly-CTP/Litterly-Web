@@ -4,7 +4,6 @@ const router = express.Router();
 
 router.get('/', (req, res) => {
     let locations = [];
-
     db.collection("TaggedTrash").get()
         .then(docs => {
             docs.forEach(doc => {
