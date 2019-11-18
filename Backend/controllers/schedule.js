@@ -46,3 +46,5 @@ router.post("/", async (req, res) => {
 //TODO: update the meetup for different times
 
 //TODO: delete the meetup
+
+module.exports = router;
