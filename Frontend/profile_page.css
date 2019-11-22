@@ -1,0 +1,33 @@
+body {
+    background-color: #4D5CF7;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url("../Images/landing_pg_bg.svg");
+    background-size: 100%;
+}
+
+#navBrand {
+    font-size: 2rem;
+    margin-left: 40px;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: right;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#downloadButton-right {
+    color: white;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+
+#headline {
+    margin-left: 100px;
+    position: relative;
+    margin-top: 450px;
+    color: white;
+}
