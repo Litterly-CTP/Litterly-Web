@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const { db } = require('../services/firestore/services.js');
 
-
+//event_id is lon and lat
 router.post('/join_meetup', (req, res) => {
     const { user_id, event_id, pic_url } = req.body;
     const event = db.collection("Meetups").doc(event_id);
