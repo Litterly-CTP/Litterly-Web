@@ -1,30 +1,80 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background: url(images/profile_page.svg);
+    background: url(images/background_profile_page.svg);
     background-size: 100%;
 }
 
-#navBrand {
-    font-size: 2rem;
-    margin-left: 40px;
+/* NAVBAR STYLING HERE  */
+
+#header {
+    text-align: center;
+    margin-top: 170px;
+    font-size: 2.5rem;
+    color: white; 
+    font-weight: bold;
 }
 
-.navbar-nav {
-    display: flex;
-    justify-content: right;
+#icons-below-navbar {
+    margin-top: 100px; 
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+}
+
+#data-below-navbar  {
+    padding-top: 50px;
+    text-align: center; 
+    font-size: 1.5rem;
+    color: rgb(5, 204, 5); 
+    font-weight: bold;
+}
+
+#header-below-navbar {
+    padding-top: 35px;
+    text-align: center; 
+    font-size: 1.5rem;
+    color: white; 
+    font-weight: bold;
+}
+
+#header-above-map {
+    text-align: center; 
+    font-size: 1.5rem;
+    color: white; 
+    font-weight: bold;
+}
+
+#trashtag-map-data {
     text-align: center;
     font-size: 1.5rem;
+    color: rgb(5, 204, 5);
 }
 
-#downloadButton-right {
-    color: white;
-    margin-top: 20px;
-    margin-right: 40px;
+
+#map {
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em;
+    height: 400px; 
+    width: 50%; 
+    border-radius: 50px 50px 50px 50px;
 }
 
-#headline {
-    margin-left: 100px;
-    position: relative;
-    margin-top: 450px;
-    color: white;
+#header-above-map {
+    text-align: center;
+    margin-top: 170px;
+    font-size: 2.5rem;
+    color: white; 
+}
+
+#bottom-links {
+    padding-top: 250px;
+    /* margin-top: 1050px;  */
+    margin-bottom: 75px;
+    text-align: center; 
+    font-size: 1rem;
+    color: black;
+    margin-left: 400px; 
+    margin-right: 400px;
+    font-weight: bold;
 }
