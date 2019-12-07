@@ -6,15 +6,16 @@ body {
 
 #mainNavbar {
     font-size: 1.5rem;
-    font-weight: 100;    
+    font-weight: 100;
 }
 
 #mainNavbar .nav-link {
-    color:rgba(255,255,255, 0.5);
+    color: rgba(255, 255, 255, 0.5);
 }
 
 #mainNavbar .nav-link:hover {
-    color: #fff; /* TODO: What color should the hover be? */
+    color: #fff;
+    /* TODO: What color should the hover be? */
 }
 
 #mainNavbar .navbar-brand {
@@ -73,7 +74,7 @@ body {
     margin-right: 150px;
     text-align: right;
     font-size: 2rem;
-} 
+}
 
 .md-white-bold-text {
     color: white;
