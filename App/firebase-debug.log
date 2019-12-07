@@ -1,0 +1,350 @@
+[debug] [2019-12-07T01:51:08.518Z] ----------------------------------------------------------------------
+[debug] [2019-12-07T01:51:08.521Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve --only functions,hosting
+[debug] [2019-12-07T01:51:08.521Z] CLI Version:   7.8.1
+[debug] [2019-12-07T01:51:08.521Z] Platform:      darwin
+[debug] [2019-12-07T01:51:08.521Z] Node Version:  v10.16.1
+[debug] [2019-12-07T01:51:08.522Z] Time:          Fri Dec 06 2019 20:51:08 GMT-0500 (Eastern Standard Time)
+[debug] [2019-12-07T01:51:08.523Z] ----------------------------------------------------------------------
+[debug] [2019-12-07T01:51:08.523Z] 
+[debug] [2019-12-07T01:51:08.541Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-12-07T01:51:08.541Z] > authorizing via signed-in user
+[debug] [2019-12-07T01:51:08.541Z] [iam] checking project fir-signintest-79b2c for permissions ["firebase.projects.get"]
+[debug] [2019-12-07T01:51:08.543Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-signintest-79b2c:testIamPermissions  
+
+[debug] [2019-12-07T01:51:08.906Z] <<< HTTP RESPONSE 200
+[debug] [2019-12-07T01:51:08.918Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/fir-signintest-79b2c  
+ 
+[debug] [2019-12-07T01:51:09.210Z] <<< HTTP RESPONSE 200
+[debug] [2019-12-07T01:51:09.217Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/fir-signintest-79b2c/webApps/-/config  
+ 
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "10"
+[info] ✔  functions: Emulator started at http://localhost:5001
+[debug] [2019-12-07T01:51:09.685Z] <<< HTTP RESPONSE 200
+[info] i  functions: Watching "/Users/nigelferrer/Desktop/Litterly-Web/App/functions" for Cloud Functions...
+[debug] [2019-12-07T01:51:09.738Z] [worker-~diagnostic~-86acbf50-8a26-494a-b7a4-b56b29bf10d4]: Assigning socketPath: /var/folders/pc/wh7xp1q97xb_q6sk0l3h6w_r0000gn/T/fire_emu_25031.sock
+[debug] [2019-12-07T01:51:09.739Z] [worker-~diagnostic~-86acbf50-8a26-494a-b7a4-b56b29bf10d4]: BUSY
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2019-12-07T01:51:10.789Z] [runtime-status] [25031] Functions runtime initialized. {"cwd":"/Users/nigelferrer/Desktop/Litterly-Web/App/functions","node_version":"10.16.1"}
+[debug] [2019-12-07T01:51:10.796Z] [runtime-status] [25031] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2019-12-07T01:51:10.807Z] [runtime-status] [25031] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.7.0","resolution":"/Users/nigelferrer/Desktop/Litterly-Web/App/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-07T01:51:10.810Z] [runtime-status] [25031] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/nigelferrer/Desktop/Litterly-Web/App/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-07T01:51:10.812Z] [runtime-status] [25031] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/nigelferrer/Desktop/Litterly-Web/App/functions/node_modules/firebase-functions/lib/index.js"}
+[info] ✔  functions[schedule]: http function initialized (http://localhost:5001/fir-signintest-79b2c/us-central1/schedule).
+[debug] [2019-12-07T01:51:11.743Z] [worker-~diagnostic~-86acbf50-8a26-494a-b7a4-b56b29bf10d4]: exited
+[debug] [2019-12-07T01:51:11.743Z] [worker-~diagnostic~-86acbf50-8a26-494a-b7a4-b56b29bf10d4]: FINISHED
+[info] [hosting] Rewriting /index.js to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Styles/landing_page.css to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[debug] [2019-12-07T01:51:13.868Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/index.js --> schedule
+[debug] [2019-12-07T01:51:13.923Z] [worker-schedule-7625af98-6c66-4585-adf9-73795d16a3c4]: Assigning socketPath: /var/folders/pc/wh7xp1q97xb_q6sk0l3h6w_r0000gn/T/fire_emu_25040.sock
+[debug] [2019-12-07T01:51:13.923Z] [worker-schedule-7625af98-6c66-4585-adf9-73795d16a3c4]: BUSY
+[debug] [2019-12-07T01:51:13.925Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Styles/landing_page.css --> schedule
+[debug] [2019-12-07T01:51:13.932Z] [worker-schedule-08f43d0f-5020-416e-ab73-ce18782cb623]: Assigning socketPath: /var/folders/pc/wh7xp1q97xb_q6sk0l3h6w_r0000gn/T/fire_emu_25041.sock
+[debug] [2019-12-07T01:51:13.932Z] [worker-schedule-08f43d0f-5020-416e-ab73-ce18782cb623]: BUSY
+[debug] [2019-12-07T01:51:14.744Z] [runtime-status] [25041] Functions runtime initialized. {"cwd":"/Users/nigelferrer/Desktop/Litterly-Web/App/functions","node_version":"10.16.1"}
+[debug] [2019-12-07T01:51:14.748Z] [runtime-status] [25040] Functions runtime initialized. {"cwd":"/Users/nigelferrer/Desktop/Litterly-Web/App/functions","node_version":"10.16.1"}
+[debug] [2019-12-07T01:51:14.749Z] [runtime-status] [25041] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2019-12-07T01:51:14.751Z] [runtime-status] [25040] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2019-12-07T01:51:14.804Z] [runtime-status] [25040] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.7.0","resolution":"/Users/nigelferrer/Desktop/Litterly-Web/App/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-07T01:51:14.805Z] [runtime-status] [25041] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.7.0","resolution":"/Users/nigelferrer/Desktop/Litterly-Web/App/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-07T01:51:14.807Z] [runtime-status] [25040] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/nigelferrer/Desktop/Litterly-Web/App/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-07T01:51:14.807Z] [runtime-status] [25041] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/nigelferrer/Desktop/Litterly-Web/App/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-07T01:51:14.809Z] [runtime-status] [25040] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/nigelferrer/Desktop/Litterly-Web/App/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-07T01:51:14.809Z] [runtime-status] [25041] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/nigelferrer/Desktop/Litterly-Web/App/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-07T01:51:15.330Z] [runtime-status] [25041] Trigger "schedule" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T01:51:15.332Z] [runtime-status] [25041] triggerDefinition {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T01:51:15.332Z] [runtime-status] [25041] Running schedule in mode HTTPS
+[debug] [2019-12-07T01:51:15.340Z] [runtime-status] [25041] Attempting to listen to socketPath: /var/folders/pc/wh7xp1q97xb_q6sk0l3h6w_r0000gn/T/fire_emu_25041.sock
+[debug] [2019-12-07T01:51:15.350Z] [functions] Runtime ready! Sending request!
+[debug] [2019-12-07T01:51:15.361Z] [runtime-status] [25040] Trigger "schedule" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T01:51:15.364Z] [runtime-status] [25040] triggerDefinition {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T01:51:15.364Z] [runtime-status] [25040] Running schedule in mode HTTPS
+[debug] [2019-12-07T01:51:15.382Z] [runtime-status] [25040] Attempting to listen to socketPath: /var/folders/pc/wh7xp1q97xb_q6sk0l3h6w_r0000gn/T/fire_emu_25040.sock
+[debug] [2019-12-07T01:51:15.386Z] [runtime-status] [25041] Ephemeral server handling GET request
+[debug] [2019-12-07T01:51:15.388Z] [functions] Runtime ready! Sending request!
+[debug] [2019-12-07T01:51:15.393Z] [runtime-status] [25041] Ephemeral server survived.
+[debug] [2019-12-07T01:51:15.404Z] [runtime-status] [25040] Ephemeral server handling GET request
+[info] [hosting] Rewriting /Landing-Images/facebook-logo-button.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/instagram.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/linkedin.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/bio.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/weekly-calendar.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[debug] [2019-12-07T01:51:15.435Z] [runtime-status] [25040] Ephemeral server survived.
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T01:51:15.442Z] [worker-schedule-08f43d0f-5020-416e-ab73-ce18782cb623]: IDLE
+[debug] [2019-12-07T01:51:15.451Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/facebook-logo-button.svg --> schedule
+[debug] [2019-12-07T01:51:15.451Z] [worker-schedule-08f43d0f-5020-416e-ab73-ce18782cb623]: Assigning socketPath: /var/folders/pc/wh7xp1q97xb_q6sk0l3h6w_r0000gn/T/fire_emu_25041.sock
+[debug] [2019-12-07T01:51:15.451Z] [worker-schedule-08f43d0f-5020-416e-ab73-ce18782cb623]: BUSY
+[debug] [2019-12-07T01:51:15.452Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/instagram.svg --> schedule
+[debug] [2019-12-07T01:51:15.494Z] [worker-schedule-887b6946-a45a-4a75-9a7b-e591b0b5d3e7]: Assigning socketPath: /var/folders/pc/wh7xp1q97xb_q6sk0l3h6w_r0000gn/T/fire_emu_25046.sock
+[debug] [2019-12-07T01:51:15.495Z] [worker-schedule-887b6946-a45a-4a75-9a7b-e591b0b5d3e7]: BUSY
+[debug] [2019-12-07T01:51:15.496Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/linkedin.svg --> schedule
+[debug] [2019-12-07T01:51:15.503Z] [worker-schedule-4d3a8bc0-34cb-4277-93ae-16a72023c057]: Assigning socketPath: /var/folders/pc/wh7xp1q97xb_q6sk0l3h6w_r0000gn/T/fire_emu_25047.sock
+[debug] [2019-12-07T01:51:15.503Z] [worker-schedule-4d3a8bc0-34cb-4277-93ae-16a72023c057]: BUSY
+[debug] [2019-12-07T01:51:15.505Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/bio.svg --> schedule
+[debug] [2019-12-07T01:51:15.513Z] [worker-schedule-66d65de3-5754-4b7b-a4d3-a813355eee46]: Assigning socketPath: /var/folders/pc/wh7xp1q97xb_q6sk0l3h6w_r0000gn/T/fire_emu_25048.sock
+[debug] [2019-12-07T01:51:15.513Z] [worker-schedule-66d65de3-5754-4b7b-a4d3-a813355eee46]: BUSY
+[debug] [2019-12-07T01:51:15.514Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/weekly-calendar.svg --> schedule
+[debug] [2019-12-07T01:51:15.523Z] [worker-schedule-59da3e5a-5067-417d-bca6-f02b877ea878]: Assigning socketPath: /var/folders/pc/wh7xp1q97xb_q6sk0l3h6w_r0000gn/T/fire_emu_25049.sock
+[debug] [2019-12-07T01:51:15.524Z] [worker-schedule-59da3e5a-5067-417d-bca6-f02b877ea878]: BUSY
+[debug] [2019-12-07T01:51:15.525Z] [runtime-status] [25041] Trigger "schedule" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T01:51:15.526Z] [runtime-status] [25041] triggerDefinition {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T01:51:15.526Z] [runtime-status] [25041] Running schedule in mode HTTPS
+[debug] [2019-12-07T01:51:15.526Z] [runtime-status] [25041] Attempting to listen to socketPath: /var/folders/pc/wh7xp1q97xb_q6sk0l3h6w_r0000gn/T/fire_emu_25041.sock
+[debug] [2019-12-07T01:51:15.529Z] [functions] Runtime ready! Sending request!
+[info] [hosting] Rewriting /Landing-Images/RackMultipart20181001-23627-10zrji3-iPhone_X_Device_Frame_inline@2x.png to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[debug] [2019-12-07T01:51:15.651Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/RackMultipart20181001-23627-10zrji3-iPhone_X_Device_Frame_inline@2x.png --> schedule
+[debug] [2019-12-07T01:51:15.661Z] [worker-schedule-4efd95a2-a9f8-44e4-a5fd-edb401eed5f5]: Assigning socketPath: /var/folders/pc/wh7xp1q97xb_q6sk0l3h6w_r0000gn/T/fire_emu_25050.sock
+[debug] [2019-12-07T01:51:15.662Z] [worker-schedule-4efd95a2-a9f8-44e4-a5fd-edb401eed5f5]: BUSY
+[debug] [2019-12-07T01:51:15.694Z] [runtime-status] [25041] Ephemeral server handling GET request
+[debug] [2019-12-07T01:51:15.699Z] [runtime-status] [25041] Ephemeral server survived.
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T01:51:15.707Z] [worker-schedule-08f43d0f-5020-416e-ab73-ce18782cb623]: IDLE
+[info] [hosting] Rewriting /Landing-Images/project-management.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[debug] [2019-12-07T01:51:15.716Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/project-management.svg --> schedule
+[debug] [2019-12-07T01:51:15.716Z] [worker-schedule-08f43d0f-5020-416e-ab73-ce18782cb623]: Assigning socketPath: /var/folders/pc/wh7xp1q97xb_q6sk0l3h6w_r0000gn/T/fire_emu_25041.sock
+[debug] [2019-12-07T01:51:15.716Z] [worker-schedule-08f43d0f-5020-416e-ab73-ce18782cb623]: BUSY
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T01:51:15.719Z] [worker-schedule-7625af98-6c66-4585-adf9-73795d16a3c4]: IDLE
+[debug] [2019-12-07T01:51:15.720Z] [runtime-status] [25041] Trigger "schedule" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T01:51:15.721Z] [runtime-status] [25041] triggerDefinition {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T01:51:15.721Z] [runtime-status] [25041] Running schedule in mode HTTPS
+[debug] [2019-12-07T01:51:15.722Z] [runtime-status] [25041] Attempting to listen to socketPath: /var/folders/pc/wh7xp1q97xb_q6sk0l3h6w_r0000gn/T/fire_emu_25041.sock
+[debug] [2019-12-07T01:51:15.723Z] [functions] Runtime ready! Sending request!
+[debug] [2019-12-07T01:51:15.730Z] [runtime-status] [25041] Ephemeral server handling GET request
+[debug] [2019-12-07T01:51:15.730Z] [runtime-status] [25041] Ephemeral server survived.
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T01:51:15.738Z] [worker-schedule-08f43d0f-5020-416e-ab73-ce18782cb623]: IDLE
+[info] [hosting] Rewriting /Landing-Images/medal.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[debug] [2019-12-07T01:51:15.746Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/medal.svg --> schedule
+[debug] [2019-12-07T01:51:15.746Z] [worker-schedule-7625af98-6c66-4585-adf9-73795d16a3c4]: Assigning socketPath: /var/folders/pc/wh7xp1q97xb_q6sk0l3h6w_r0000gn/T/fire_emu_25040.sock
+[debug] [2019-12-07T01:51:15.746Z] [worker-schedule-7625af98-6c66-4585-adf9-73795d16a3c4]: BUSY
+[debug] [2019-12-07T01:51:15.747Z] [runtime-status] [25040] Trigger "schedule" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T01:51:15.748Z] [runtime-status] [25040] triggerDefinition {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T01:51:15.748Z] [runtime-status] [25040] Running schedule in mode HTTPS
+[debug] [2019-12-07T01:51:15.750Z] [runtime-status] [25040] Attempting to listen to socketPath: /var/folders/pc/wh7xp1q97xb_q6sk0l3h6w_r0000gn/T/fire_emu_25040.sock
+[debug] [2019-12-07T01:51:15.752Z] [functions] Runtime ready! Sending request!
+[debug] [2019-12-07T01:51:15.757Z] [runtime-status] [25040] Ephemeral server handling GET request
+[debug] [2019-12-07T01:51:15.758Z] [runtime-status] [25040] Ephemeral server survived.
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T01:51:15.762Z] [worker-schedule-7625af98-6c66-4585-adf9-73795d16a3c4]: IDLE
+[info] [hosting] Rewriting /Landing-Images/meetup-map.png to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[debug] [2019-12-07T01:51:15.771Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/meetup-map.png --> schedule
+[debug] [2019-12-07T01:51:15.771Z] [worker-schedule-7625af98-6c66-4585-adf9-73795d16a3c4]: Assigning socketPath: /var/folders/pc/wh7xp1q97xb_q6sk0l3h6w_r0000gn/T/fire_emu_25040.sock
+[debug] [2019-12-07T01:51:15.771Z] [worker-schedule-7625af98-6c66-4585-adf9-73795d16a3c4]: BUSY
+[debug] [2019-12-07T01:51:15.772Z] [runtime-status] [25040] Trigger "schedule" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T01:51:15.773Z] [runtime-status] [25040] triggerDefinition {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T01:51:15.773Z] [runtime-status] [25040] Running schedule in mode HTTPS
+[debug] [2019-12-07T01:51:15.773Z] [runtime-status] [25040] Attempting to listen to socketPath: /var/folders/pc/wh7xp1q97xb_q6sk0l3h6w_r0000gn/T/fire_emu_25040.sock
+[debug] [2019-12-07T01:51:15.774Z] [functions] Runtime ready! Sending request!
+[debug] [2019-12-07T01:51:15.778Z] [runtime-status] [25040] Ephemeral server handling GET request
+[debug] [2019-12-07T01:51:15.779Z] [runtime-status] [25040] Ephemeral server survived.
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T01:51:15.846Z] [worker-schedule-7625af98-6c66-4585-adf9-73795d16a3c4]: IDLE
+[info] [hosting] Rewriting /Landing-Images/landing_pg_bg.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[debug] [2019-12-07T01:51:15.851Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/landing_pg_bg.svg --> schedule
+[debug] [2019-12-07T01:51:15.851Z] [worker-schedule-7625af98-6c66-4585-adf9-73795d16a3c4]: Assigning socketPath: /var/folders/pc/wh7xp1q97xb_q6sk0l3h6w_r0000gn/T/fire_emu_25040.sock
+[debug] [2019-12-07T01:51:15.852Z] [worker-schedule-7625af98-6c66-4585-adf9-73795d16a3c4]: BUSY
+[debug] [2019-12-07T01:51:15.853Z] [runtime-status] [25040] Trigger "schedule" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T01:51:15.854Z] [runtime-status] [25040] triggerDefinition {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T01:51:15.854Z] [runtime-status] [25040] Running schedule in mode HTTPS
+[debug] [2019-12-07T01:51:15.854Z] [runtime-status] [25040] Attempting to listen to socketPath: /var/folders/pc/wh7xp1q97xb_q6sk0l3h6w_r0000gn/T/fire_emu_25040.sock
+[debug] [2019-12-07T01:51:15.858Z] [functions] Runtime ready! Sending request!
+[debug] [2019-12-07T01:51:15.863Z] [runtime-status] [25040] Ephemeral server handling GET request
+[debug] [2019-12-07T01:51:15.866Z] [runtime-status] [25040] Ephemeral server survived.
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T01:51:15.907Z] [worker-schedule-7625af98-6c66-4585-adf9-73795d16a3c4]: IDLE
+[info] [hosting] Rewriting /profile to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[debug] [2019-12-07T01:51:17.343Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/profile --> schedule
+[debug] [2019-12-07T01:51:17.343Z] [worker-schedule-7625af98-6c66-4585-adf9-73795d16a3c4]: Assigning socketPath: /var/folders/pc/wh7xp1q97xb_q6sk0l3h6w_r0000gn/T/fire_emu_25040.sock
+[debug] [2019-12-07T01:51:17.343Z] [worker-schedule-7625af98-6c66-4585-adf9-73795d16a3c4]: BUSY
+[debug] [2019-12-07T01:51:17.344Z] [runtime-status] [25040] Trigger "schedule" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T01:51:17.344Z] [runtime-status] [25040] triggerDefinition {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T01:51:17.344Z] [runtime-status] [25040] Running schedule in mode HTTPS
+[debug] [2019-12-07T01:51:17.345Z] [runtime-status] [25040] Attempting to listen to socketPath: /var/folders/pc/wh7xp1q97xb_q6sk0l3h6w_r0000gn/T/fire_emu_25040.sock
+[debug] [2019-12-07T01:51:17.346Z] [functions] Runtime ready! Sending request!
+[debug] [2019-12-07T01:51:17.350Z] [runtime-status] [25040] Ephemeral server handling GET request
+[debug] [2019-12-07T01:51:17.350Z] [runtime-status] [25040] Ephemeral server survived.
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T01:51:17.358Z] [worker-schedule-7625af98-6c66-4585-adf9-73795d16a3c4]: IDLE
+[debug] [2019-12-07T01:51:17.463Z] [runtime-status] [25046] Functions runtime initialized. {"cwd":"/Users/nigelferrer/Desktop/Litterly-Web/App/functions","node_version":"10.16.1"}
+[debug] [2019-12-07T01:51:17.465Z] [runtime-status] [25049] Functions runtime initialized. {"cwd":"/Users/nigelferrer/Desktop/Litterly-Web/App/functions","node_version":"10.16.1"}
+[debug] [2019-12-07T01:51:17.468Z] [runtime-status] [25046] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2019-12-07T01:51:17.470Z] [runtime-status] [25049] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2019-12-07T01:51:17.475Z] [runtime-status] [25049] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.7.0","resolution":"/Users/nigelferrer/Desktop/Litterly-Web/App/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-07T01:51:17.476Z] [runtime-status] [25049] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/nigelferrer/Desktop/Litterly-Web/App/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-07T01:51:17.478Z] [runtime-status] [25049] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/nigelferrer/Desktop/Litterly-Web/App/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-07T01:51:17.487Z] [runtime-status] [25047] Functions runtime initialized. {"cwd":"/Users/nigelferrer/Desktop/Litterly-Web/App/functions","node_version":"10.16.1"}
+[debug] [2019-12-07T01:51:17.492Z] [runtime-status] [25046] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.7.0","resolution":"/Users/nigelferrer/Desktop/Litterly-Web/App/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-07T01:51:17.494Z] [runtime-status] [25047] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2019-12-07T01:51:17.495Z] [runtime-status] [25046] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/nigelferrer/Desktop/Litterly-Web/App/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-07T01:51:17.498Z] [runtime-status] [25046] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/nigelferrer/Desktop/Litterly-Web/App/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-07T01:51:17.499Z] [runtime-status] [25047] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.7.0","resolution":"/Users/nigelferrer/Desktop/Litterly-Web/App/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-07T01:51:17.501Z] [runtime-status] [25047] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/nigelferrer/Desktop/Litterly-Web/App/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-07T01:51:17.503Z] [runtime-status] [25047] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/nigelferrer/Desktop/Litterly-Web/App/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-07T01:51:17.520Z] [runtime-status] [25048] Functions runtime initialized. {"cwd":"/Users/nigelferrer/Desktop/Litterly-Web/App/functions","node_version":"10.16.1"}
+[debug] [2019-12-07T01:51:17.535Z] [runtime-status] [25048] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2019-12-07T01:51:17.540Z] [runtime-status] [25048] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.7.0","resolution":"/Users/nigelferrer/Desktop/Litterly-Web/App/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-07T01:51:17.541Z] [runtime-status] [25048] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/nigelferrer/Desktop/Litterly-Web/App/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-07T01:51:17.543Z] [runtime-status] [25048] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/nigelferrer/Desktop/Litterly-Web/App/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-07T01:51:17.552Z] [runtime-status] [25050] Functions runtime initialized. {"cwd":"/Users/nigelferrer/Desktop/Litterly-Web/App/functions","node_version":"10.16.1"}
+[debug] [2019-12-07T01:51:17.574Z] [runtime-status] [25050] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true,"pubsub_emulator":true}
+[debug] [2019-12-07T01:51:17.578Z] [runtime-status] [25050] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.7.0","resolution":"/Users/nigelferrer/Desktop/Litterly-Web/App/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-07T01:51:17.581Z] [runtime-status] [25050] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/nigelferrer/Desktop/Litterly-Web/App/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-07T01:51:17.583Z] [runtime-status] [25050] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/nigelferrer/Desktop/Litterly-Web/App/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-07T01:51:18.932Z] [runtime-status] [25046] Trigger "schedule" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T01:51:18.933Z] [runtime-status] [25046] triggerDefinition {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T01:51:18.933Z] [runtime-status] [25046] Running schedule in mode HTTPS
+[debug] [2019-12-07T01:51:18.955Z] [runtime-status] [25046] Attempting to listen to socketPath: /var/folders/pc/wh7xp1q97xb_q6sk0l3h6w_r0000gn/T/fire_emu_25046.sock
+[debug] [2019-12-07T01:51:18.991Z] [functions] Runtime ready! Sending request!
+[debug] [2019-12-07T01:51:19.039Z] [runtime-status] [25046] Ephemeral server handling GET request
+[debug] [2019-12-07T01:51:19.055Z] [runtime-status] [25047] Trigger "schedule" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T01:51:19.057Z] [runtime-status] [25047] triggerDefinition {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T01:51:19.057Z] [runtime-status] [25047] Running schedule in mode HTTPS
+[debug] [2019-12-07T01:51:19.065Z] [runtime-status] [25049] Trigger "schedule" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T01:51:19.065Z] [runtime-status] [25049] triggerDefinition {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T01:51:19.065Z] [runtime-status] [25049] Running schedule in mode HTTPS
+[debug] [2019-12-07T01:51:19.066Z] [runtime-status] [25046] Ephemeral server survived.
+[debug] [2019-12-07T01:51:19.068Z] [runtime-status] [25047] Attempting to listen to socketPath: /var/folders/pc/wh7xp1q97xb_q6sk0l3h6w_r0000gn/T/fire_emu_25047.sock
+[debug] [2019-12-07T01:51:19.081Z] [runtime-status] [25049] Attempting to listen to socketPath: /var/folders/pc/wh7xp1q97xb_q6sk0l3h6w_r0000gn/T/fire_emu_25049.sock
+[debug] [2019-12-07T01:51:19.097Z] [functions] Runtime ready! Sending request!
+[debug] [2019-12-07T01:51:19.106Z] [runtime-status] [25048] Trigger "schedule" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T01:51:19.108Z] [runtime-status] [25048] triggerDefinition {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T01:51:19.108Z] [runtime-status] [25048] Running schedule in mode HTTPS
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T01:51:19.109Z] [worker-schedule-887b6946-a45a-4a75-9a7b-e591b0b5d3e7]: IDLE
+[debug] [2019-12-07T01:51:19.121Z] [runtime-status] [25047] Ephemeral server handling GET request
+[debug] [2019-12-07T01:51:19.126Z] [runtime-status] [25048] Attempting to listen to socketPath: /var/folders/pc/wh7xp1q97xb_q6sk0l3h6w_r0000gn/T/fire_emu_25048.sock
+[debug] [2019-12-07T01:51:19.132Z] [runtime-status] [25047] Ephemeral server survived.
+[debug] [2019-12-07T01:51:19.134Z] [functions] Runtime ready! Sending request!
+[debug] [2019-12-07T01:51:19.164Z] [functions] Runtime ready! Sending request!
+[debug] [2019-12-07T01:51:19.180Z] [runtime-status] [25048] Ephemeral server handling GET request
+[debug] [2019-12-07T01:51:19.193Z] [runtime-status] [25049] Ephemeral server handling GET request
+[debug] [2019-12-07T01:51:19.213Z] [runtime-status] [25049] Ephemeral server survived.
+[debug] [2019-12-07T01:51:19.213Z] [runtime-status] [25048] Ephemeral server survived.
+[debug] [2019-12-07T01:51:19.243Z] [runtime-status] [25050] Trigger "schedule" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T01:51:19.245Z] [runtime-status] [25050] triggerDefinition {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T01:51:19.245Z] [runtime-status] [25050] Running schedule in mode HTTPS
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T01:51:19.247Z] [worker-schedule-4d3a8bc0-34cb-4277-93ae-16a72023c057]: IDLE
+[debug] [2019-12-07T01:51:19.256Z] [runtime-status] [25050] Attempting to listen to socketPath: /var/folders/pc/wh7xp1q97xb_q6sk0l3h6w_r0000gn/T/fire_emu_25050.sock
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T01:51:19.263Z] [worker-schedule-59da3e5a-5067-417d-bca6-f02b877ea878]: IDLE
+[debug] [2019-12-07T01:51:19.274Z] [functions] Runtime ready! Sending request!
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T01:51:19.300Z] [worker-schedule-66d65de3-5754-4b7b-a4d3-a813355eee46]: IDLE
+[debug] [2019-12-07T01:51:19.314Z] [runtime-status] [25050] Ephemeral server handling GET request
+[debug] [2019-12-07T01:51:19.325Z] [runtime-status] [25050] Ephemeral server survived.
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T01:51:19.406Z] [worker-schedule-4efd95a2-a9f8-44e4-a5fd-edb401eed5f5]: IDLE
+[info] [hosting] Rewriting /index.js to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[debug] [2019-12-07T01:51:21.843Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/index.js --> schedule
+[debug] [2019-12-07T01:51:21.844Z] [worker-schedule-7625af98-6c66-4585-adf9-73795d16a3c4]: Assigning socketPath: /var/folders/pc/wh7xp1q97xb_q6sk0l3h6w_r0000gn/T/fire_emu_25040.sock
+[debug] [2019-12-07T01:51:21.844Z] [worker-schedule-7625af98-6c66-4585-adf9-73795d16a3c4]: BUSY
+[debug] [2019-12-07T01:51:21.846Z] [runtime-status] [25040] Trigger "schedule" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T01:51:21.847Z] [runtime-status] [25040] triggerDefinition {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T01:51:21.847Z] [runtime-status] [25040] Running schedule in mode HTTPS
+[debug] [2019-12-07T01:51:21.847Z] [runtime-status] [25040] Attempting to listen to socketPath: /var/folders/pc/wh7xp1q97xb_q6sk0l3h6w_r0000gn/T/fire_emu_25040.sock
+[debug] [2019-12-07T01:51:21.849Z] [functions] Runtime ready! Sending request!
+[info] [hosting] Rewriting /Styles/profile_page.css to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[debug] [2019-12-07T01:51:21.854Z] [runtime-status] [25040] Ephemeral server handling GET request
+[debug] [2019-12-07T01:51:21.855Z] [runtime-status] [25040] Ephemeral server survived.
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T01:51:21.859Z] [worker-schedule-7625af98-6c66-4585-adf9-73795d16a3c4]: IDLE
+[debug] [2019-12-07T01:51:21.860Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Styles/profile_page.css --> schedule
+[debug] [2019-12-07T01:51:21.860Z] [worker-schedule-7625af98-6c66-4585-adf9-73795d16a3c4]: Assigning socketPath: /var/folders/pc/wh7xp1q97xb_q6sk0l3h6w_r0000gn/T/fire_emu_25040.sock
+[debug] [2019-12-07T01:51:21.860Z] [worker-schedule-7625af98-6c66-4585-adf9-73795d16a3c4]: BUSY
+[debug] [2019-12-07T01:51:21.869Z] [runtime-status] [25040] Trigger "schedule" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T01:51:21.869Z] [runtime-status] [25040] triggerDefinition {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T01:51:21.869Z] [runtime-status] [25040] Running schedule in mode HTTPS
+[debug] [2019-12-07T01:51:21.870Z] [runtime-status] [25040] Attempting to listen to socketPath: /var/folders/pc/wh7xp1q97xb_q6sk0l3h6w_r0000gn/T/fire_emu_25040.sock
+[debug] [2019-12-07T01:51:21.878Z] [functions] Runtime ready! Sending request!
+[debug] [2019-12-07T01:51:21.883Z] [runtime-status] [25040] Ephemeral server handling GET request
+[debug] [2019-12-07T01:51:21.884Z] [runtime-status] [25040] Ephemeral server survived.
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T01:51:21.894Z] [worker-schedule-7625af98-6c66-4585-adf9-73795d16a3c4]: IDLE
+[info] [hosting] Rewriting /index.js to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[debug] [2019-12-07T01:51:21.913Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/index.js --> schedule
+[debug] [2019-12-07T01:51:21.914Z] [worker-schedule-7625af98-6c66-4585-adf9-73795d16a3c4]: Assigning socketPath: /var/folders/pc/wh7xp1q97xb_q6sk0l3h6w_r0000gn/T/fire_emu_25040.sock
+[debug] [2019-12-07T01:51:21.914Z] [worker-schedule-7625af98-6c66-4585-adf9-73795d16a3c4]: BUSY
+[info] [hosting] Rewriting /images/weekly-calendar.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /images/project-management.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[debug] [2019-12-07T01:51:21.922Z] [runtime-status] [25040] Trigger "schedule" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T01:51:21.922Z] [runtime-status] [25040] triggerDefinition {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T01:51:21.922Z] [runtime-status] [25040] Running schedule in mode HTTPS
+[debug] [2019-12-07T01:51:21.923Z] [runtime-status] [25040] Attempting to listen to socketPath: /var/folders/pc/wh7xp1q97xb_q6sk0l3h6w_r0000gn/T/fire_emu_25040.sock
+[debug] [2019-12-07T01:51:21.940Z] [functions] Runtime ready! Sending request!
+[debug] [2019-12-07T01:51:21.955Z] [runtime-status] [25040] Ephemeral server handling GET request
+[debug] [2019-12-07T01:51:21.955Z] [runtime-status] [25040] Ephemeral server survived.
+[info] [hosting] Rewriting /images/bio.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[debug] [2019-12-07T01:51:21.983Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/images/weekly-calendar.svg --> schedule
+[debug] [2019-12-07T01:51:21.984Z] [worker-schedule-08f43d0f-5020-416e-ab73-ce18782cb623]: Assigning socketPath: /var/folders/pc/wh7xp1q97xb_q6sk0l3h6w_r0000gn/T/fire_emu_25041.sock
+[debug] [2019-12-07T01:51:21.984Z] [worker-schedule-08f43d0f-5020-416e-ab73-ce18782cb623]: BUSY
+[debug] [2019-12-07T01:51:21.985Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/images/project-management.svg --> schedule
+[debug] [2019-12-07T01:51:21.985Z] [worker-schedule-887b6946-a45a-4a75-9a7b-e591b0b5d3e7]: Assigning socketPath: /var/folders/pc/wh7xp1q97xb_q6sk0l3h6w_r0000gn/T/fire_emu_25046.sock
+[debug] [2019-12-07T01:51:21.986Z] [worker-schedule-887b6946-a45a-4a75-9a7b-e591b0b5d3e7]: BUSY
+[info] [hosting] Rewriting /images/background_profile_page.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T01:51:21.999Z] [worker-schedule-7625af98-6c66-4585-adf9-73795d16a3c4]: IDLE
+[debug] [2019-12-07T01:51:22.000Z] [runtime-status] [25046] Trigger "schedule" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T01:51:22.001Z] [runtime-status] [25046] triggerDefinition {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T01:51:22.029Z] [runtime-status] [25046] Running schedule in mode HTTPS
+[debug] [2019-12-07T01:51:22.029Z] [runtime-status] [25046] Attempting to listen to socketPath: /var/folders/pc/wh7xp1q97xb_q6sk0l3h6w_r0000gn/T/fire_emu_25046.sock
+[debug] [2019-12-07T01:51:22.031Z] [functions] Runtime ready! Sending request!
+[debug] [2019-12-07T01:51:22.034Z] [runtime-status] [25041] Trigger "schedule" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T01:51:22.034Z] [runtime-status] [25041] triggerDefinition {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T01:51:22.034Z] [runtime-status] [25041] Running schedule in mode HTTPS
+[debug] [2019-12-07T01:51:22.035Z] [runtime-status] [25041] Attempting to listen to socketPath: /var/folders/pc/wh7xp1q97xb_q6sk0l3h6w_r0000gn/T/fire_emu_25041.sock
+[debug] [2019-12-07T01:51:22.035Z] [functions] Runtime ready! Sending request!
+[debug] [2019-12-07T01:51:22.067Z] [runtime-status] [25046] Ephemeral server handling GET request
+[debug] [2019-12-07T01:51:22.084Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/images/bio.svg --> schedule
+[debug] [2019-12-07T01:51:22.085Z] [worker-schedule-7625af98-6c66-4585-adf9-73795d16a3c4]: Assigning socketPath: /var/folders/pc/wh7xp1q97xb_q6sk0l3h6w_r0000gn/T/fire_emu_25040.sock
+[debug] [2019-12-07T01:51:22.085Z] [worker-schedule-7625af98-6c66-4585-adf9-73795d16a3c4]: BUSY
+[debug] [2019-12-07T01:51:22.086Z] [runtime-status] [25046] Ephemeral server survived.
+[debug] [2019-12-07T01:51:22.086Z] [runtime-status] [25041] Ephemeral server handling GET request
+[debug] [2019-12-07T01:51:22.087Z] [runtime-status] [25041] Ephemeral server survived.
+[debug] [2019-12-07T01:51:22.091Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/images/background_profile_page.svg --> schedule
+[debug] [2019-12-07T01:51:22.091Z] [worker-schedule-4d3a8bc0-34cb-4277-93ae-16a72023c057]: Assigning socketPath: /var/folders/pc/wh7xp1q97xb_q6sk0l3h6w_r0000gn/T/fire_emu_25047.sock
+[debug] [2019-12-07T01:51:22.091Z] [worker-schedule-4d3a8bc0-34cb-4277-93ae-16a72023c057]: BUSY
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T01:51:22.096Z] [worker-schedule-887b6946-a45a-4a75-9a7b-e591b0b5d3e7]: IDLE
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T01:51:22.098Z] [worker-schedule-08f43d0f-5020-416e-ab73-ce18782cb623]: IDLE
+[debug] [2019-12-07T01:51:22.098Z] [runtime-status] [25040] Trigger "schedule" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T01:51:22.099Z] [runtime-status] [25040] triggerDefinition {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T01:51:22.099Z] [runtime-status] [25040] Running schedule in mode HTTPS
+[debug] [2019-12-07T01:51:22.099Z] [runtime-status] [25040] Attempting to listen to socketPath: /var/folders/pc/wh7xp1q97xb_q6sk0l3h6w_r0000gn/T/fire_emu_25040.sock
+[debug] [2019-12-07T01:51:22.100Z] [functions] Runtime ready! Sending request!
+[debug] [2019-12-07T01:51:22.105Z] [runtime-status] [25047] Trigger "schedule" has been found, beginning invocation!
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T01:51:22.106Z] [runtime-status] [25047] triggerDefinition {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T01:51:22.106Z] [runtime-status] [25047] Running schedule in mode HTTPS
+[debug] [2019-12-07T01:51:22.106Z] [runtime-status] [25047] Attempting to listen to socketPath: /var/folders/pc/wh7xp1q97xb_q6sk0l3h6w_r0000gn/T/fire_emu_25047.sock
+[debug] [2019-12-07T01:51:22.108Z] [functions] Runtime ready! Sending request!
+[debug] [2019-12-07T01:51:22.128Z] [runtime-status] [25040] Ephemeral server handling GET request
+[debug] [2019-12-07T01:51:22.128Z] [runtime-status] [25040] Ephemeral server survived.
+[debug] [2019-12-07T01:51:22.128Z] [runtime-status] [25047] Ephemeral server handling GET request
+[debug] [2019-12-07T01:51:22.128Z] [runtime-status] [25047] Ephemeral server survived.
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T01:51:22.133Z] [worker-schedule-7625af98-6c66-4585-adf9-73795d16a3c4]: IDLE
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T01:51:22.143Z] [worker-schedule-4d3a8bc0-34cb-4277-93ae-16a72023c057]: IDLE
