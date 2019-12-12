@@ -1,0 +1,1209 @@
+[debug] [2019-12-07T17:07:46.762Z] ----------------------------------------------------------------------
+[debug] [2019-12-07T17:07:46.765Z] Command:       /usr/local/Cellar/node/12.11.1/bin/node /usr/local/bin/firebase serve --only functions,hosting
+[debug] [2019-12-07T17:07:46.765Z] CLI Version:   7.7.0
+[debug] [2019-12-07T17:07:46.765Z] Platform:      darwin
+[debug] [2019-12-07T17:07:46.765Z] Node Version:  v12.11.1
+[debug] [2019-12-07T17:07:46.766Z] Time:          Sat Dec 07 2019 12:07:46 GMT-0500 (Eastern Standard Time)
+[debug] [2019-12-07T17:07:46.766Z] ----------------------------------------------------------------------
+[debug] [2019-12-07T17:07:46.766Z] 
+[debug] [2019-12-07T17:07:46.778Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-12-07T17:07:46.778Z] > authorizing via signed-in user
+[debug] [2019-12-07T17:07:46.778Z] [iam] checking project fir-signintest-79b2c for permissions ["firebase.projects.get"]
+[debug] [2019-12-07T17:07:46.780Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-12-07T17:07:46.780Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-12-07T17:07:47.022Z] <<< HTTP RESPONSE 200
+[debug] [2019-12-07T17:07:47.037Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/fir-signintest-79b2c:testIamPermissions  
+
+[debug] [2019-12-07T17:07:47.385Z] <<< HTTP RESPONSE 200
+[debug] [2019-12-07T17:07:47.387Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/fir-signintest-79b2c  
+ 
+[debug] [2019-12-07T17:07:47.795Z] <<< HTTP RESPONSE 200
+[debug] [2019-12-07T17:07:47.800Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/fir-signintest-79b2c/webApps/-/config  
+ 
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "12"
+[info] ✔  functions: Emulator started at http://localhost:5001
+[debug] [2019-12-07T17:07:48.410Z] <<< HTTP RESPONSE 200
+[info] i  functions: Watching "/Users/sparkyevangelista/Documents/Litterly-Web/Backend/functions" for Cloud Functions...
+[debug] [2019-12-07T17:07:48.436Z] [worker-~diagnostic~-24c12ec5-2356-4674-ac1b-426615e39c7d]: BUSY
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2019-12-07T17:07:48.624Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/sparkyevangelista/Documents/Litterly-Web/Backend/functions","node_version":"12.11.1"}
+[debug] [2019-12-07T17:07:48.625Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-12-07T17:07:48.629Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.7.0","resolution":"/Users/sparkyevangelista/Documents/Litterly-Web/Backend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-07T17:07:48.630Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/sparkyevangelista/Documents/Litterly-Web/Backend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-07T17:07:48.630Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/sparkyevangelista/Documents/Litterly-Web/Backend/functions/node_modules/firebase-functions/lib/index.js"}
+[info] ✔  functions[schedule]: http function initialized (http://localhost:5001/fir-signintest-79b2c/us-central1/schedule).
+[debug] [2019-12-07T17:07:49.199Z] [worker-~diagnostic~-24c12ec5-2356-4674-ac1b-426615e39c7d]: exited
+[debug] [2019-12-07T17:07:49.199Z] [worker-~diagnostic~-24c12ec5-2356-4674-ac1b-426615e39c7d]: FINISHED
+[info] [hosting] Rewriting /Styles/landing_page.css to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/bio.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/weekly-calendar.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[debug] [2019-12-07T17:07:55.284Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Styles/landing_page.css --> schedule
+[debug] [2019-12-07T17:07:55.288Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: BUSY
+[debug] [2019-12-07T17:07:55.289Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/bio.svg --> schedule
+[debug] [2019-12-07T17:07:55.293Z] [worker-schedule-2c14cad3-23aa-41ea-8492-6b903a074007]: BUSY
+[debug] [2019-12-07T17:07:55.296Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/weekly-calendar.svg --> schedule
+[debug] [2019-12-07T17:07:55.303Z] [worker-schedule-161eb733-ad4b-4647-9494-f17479cdeaf0]: BUSY
+[info] [hosting] Rewriting /index.js to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/RackMultipart20181001-23627-10zrji3-iPhone_X_Device_Frame_inline@2x.png to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/project-management.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[debug] [2019-12-07T17:07:55.414Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/index.js --> schedule
+[debug] [2019-12-07T17:07:55.420Z] [worker-schedule-dfbec82f-9f63-44af-80ed-9b348c255f43]: BUSY
+[debug] [2019-12-07T17:07:55.422Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/RackMultipart20181001-23627-10zrji3-iPhone_X_Device_Frame_inline@2x.png --> schedule
+[debug] [2019-12-07T17:07:55.435Z] [worker-schedule-e90a0ec5-d823-4c72-9713-ebb9008156e1]: BUSY
+[debug] [2019-12-07T17:07:55.437Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/project-management.svg --> schedule
+[debug] [2019-12-07T17:07:55.447Z] [worker-schedule-c105bd50-c625-4ecf-9a4d-253d0177892b]: BUSY
+[debug] [2019-12-07T17:07:55.794Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/sparkyevangelista/Documents/Litterly-Web/Backend/functions","node_version":"12.11.1"}
+[debug] [2019-12-07T17:07:55.800Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-12-07T17:07:55.803Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.7.0","resolution":"/Users/sparkyevangelista/Documents/Litterly-Web/Backend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-07T17:07:55.806Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/sparkyevangelista/Documents/Litterly-Web/Backend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-07T17:07:55.808Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/sparkyevangelista/Documents/Litterly-Web/Backend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-07T17:07:55.817Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/sparkyevangelista/Documents/Litterly-Web/Backend/functions","node_version":"12.11.1"}
+[debug] [2019-12-07T17:07:55.819Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-12-07T17:07:55.822Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.7.0","resolution":"/Users/sparkyevangelista/Documents/Litterly-Web/Backend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-07T17:07:55.822Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/sparkyevangelista/Documents/Litterly-Web/Backend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-07T17:07:55.823Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/sparkyevangelista/Documents/Litterly-Web/Backend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-07T17:07:55.842Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/sparkyevangelista/Documents/Litterly-Web/Backend/functions","node_version":"12.11.1"}
+[debug] [2019-12-07T17:07:55.843Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-12-07T17:07:55.847Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.7.0","resolution":"/Users/sparkyevangelista/Documents/Litterly-Web/Backend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-07T17:07:55.848Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/sparkyevangelista/Documents/Litterly-Web/Backend/functions","node_version":"12.11.1"}
+[debug] [2019-12-07T17:07:55.849Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/sparkyevangelista/Documents/Litterly-Web/Backend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-07T17:07:55.850Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/sparkyevangelista/Documents/Litterly-Web/Backend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-07T17:07:55.851Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-12-07T17:07:55.854Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.7.0","resolution":"/Users/sparkyevangelista/Documents/Litterly-Web/Backend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-07T17:07:55.855Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/sparkyevangelista/Documents/Litterly-Web/Backend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-07T17:07:55.857Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/sparkyevangelista/Documents/Litterly-Web/Backend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-07T17:07:55.887Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/sparkyevangelista/Documents/Litterly-Web/Backend/functions","node_version":"12.11.1"}
+[debug] [2019-12-07T17:07:55.887Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-12-07T17:07:55.889Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.7.0","resolution":"/Users/sparkyevangelista/Documents/Litterly-Web/Backend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-07T17:07:55.890Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/sparkyevangelista/Documents/Litterly-Web/Backend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-07T17:07:55.891Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/sparkyevangelista/Documents/Litterly-Web/Backend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-07T17:07:55.922Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/sparkyevangelista/Documents/Litterly-Web/Backend/functions","node_version":"12.11.1"}
+[debug] [2019-12-07T17:07:55.926Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-12-07T17:07:55.926Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.7.0","resolution":"/Users/sparkyevangelista/Documents/Litterly-Web/Backend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-07T17:07:55.928Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/sparkyevangelista/Documents/Litterly-Web/Backend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-07T17:07:55.931Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/sparkyevangelista/Documents/Litterly-Web/Backend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-07T17:07:56.438Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:07:56.438Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:07:56.438Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:07:56.476Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6958.sock"}
+[debug] [2019-12-07T17:07:56.479Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6958.sock"}
+[debug] [2019-12-07T17:07:56.495Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:07:56.496Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:07:56.496Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:07:56.508Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:07:56.512Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-12-07T17:07:56.517Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:07:56.517Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:07:56.525Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] [hosting] Rewriting /Landing-Images/medal.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:07:56.531Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:07:56.531Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:07:56.532Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/medal.svg --> schedule
+[debug] [2019-12-07T17:07:56.540Z] [worker-schedule-3002e069-0ef6-46e2-8784-6ff8434fd1f3]: BUSY
+[debug] [2019-12-07T17:07:56.541Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6957.sock"}
+[debug] [2019-12-07T17:07:56.550Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6957.sock"}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:07:56.564Z] [worker-schedule-161eb733-ad4b-4647-9494-f17479cdeaf0]: IDLE
+[debug] [2019-12-07T17:07:56.592Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:07:56.592Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:07:56.599Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-12-07T17:07:56.600Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:07:56.601Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:07:56.601Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:07:56.609Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6959.sock"}
+[debug] [2019-12-07T17:07:56.609Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6959.sock"}
+[debug] [2019-12-07T17:07:56.620Z] [runtime-status] Ephemeral server used! {}
+[info] [hosting] Rewriting /Landing-Images/meetup-map.png to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[debug] [2019-12-07T17:07:56.630Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/meetup-map.png --> schedule
+[debug] [2019-12-07T17:07:56.630Z] [worker-schedule-161eb733-ad4b-4647-9494-f17479cdeaf0]: BUSY
+[debug] [2019-12-07T17:07:56.630Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-12-07T17:07:56.631Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:07:56.631Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:07:56.632Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:07:56.634Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6958.sock"}
+[debug] [2019-12-07T17:07:56.634Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6958.sock"}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:07:56.637Z] [worker-schedule-2c14cad3-23aa-41ea-8492-6b903a074007]: IDLE
+[debug] [2019-12-07T17:07:56.638Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:07:56.638Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:07:56.655Z] [worker-schedule-161eb733-ad4b-4647-9494-f17479cdeaf0]: IDLE
+[info] [hosting] Rewriting /Landing-Images/facebook-logo-button.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[debug] [2019-12-07T17:07:56.660Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/facebook-logo-button.svg --> schedule
+[debug] [2019-12-07T17:07:56.660Z] [worker-schedule-2c14cad3-23aa-41ea-8492-6b903a074007]: BUSY
+[debug] [2019-12-07T17:07:56.661Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:07:56.662Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-12-07T17:07:56.664Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:07:56.664Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:07:56.667Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6957.sock"}
+[debug] [2019-12-07T17:07:56.668Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6957.sock"}
+[info] [hosting] Rewriting /Landing-Images/instagram.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[debug] [2019-12-07T17:07:56.687Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/instagram.svg --> schedule
+[debug] [2019-12-07T17:07:56.687Z] [worker-schedule-161eb733-ad4b-4647-9494-f17479cdeaf0]: BUSY
+[debug] [2019-12-07T17:07:56.688Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:07:56.689Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:07:56.689Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:07:56.689Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6958.sock"}
+[debug] [2019-12-07T17:07:56.690Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6958.sock"}
+[debug] [2019-12-07T17:07:56.696Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:07:56.697Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-12-07T17:07:56.697Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] [hosting] Rewriting /Landing-Images/linkedin.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[debug] [2019-12-07T17:07:56.705Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/linkedin.svg --> schedule
+[debug] [2019-12-07T17:07:56.713Z] [worker-schedule-0197570b-4a14-493f-a744-764031d5e2da]: BUSY
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:07:56.715Z] [worker-schedule-161eb733-ad4b-4647-9494-f17479cdeaf0]: IDLE
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:07:56.716Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:07:56.716Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:07:56.718Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:07:56.718Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:07:56.727Z] [worker-schedule-2c14cad3-23aa-41ea-8492-6b903a074007]: IDLE
+[info] [hosting] Rewriting /Landing-Images/landing_pg_bg.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[debug] [2019-12-07T17:07:56.735Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/landing_pg_bg.svg --> schedule
+[debug] [2019-12-07T17:07:56.735Z] [worker-schedule-2c14cad3-23aa-41ea-8492-6b903a074007]: BUSY
+[debug] [2019-12-07T17:07:56.736Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:07:56.749Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:07:56.749Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:07:56.763Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6957.sock"}
+[debug] [2019-12-07T17:07:56.764Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6957.sock"}
+[debug] [2019-12-07T17:07:56.769Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6960.sock"}
+[debug] [2019-12-07T17:07:56.770Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6960.sock"}
+[debug] [2019-12-07T17:07:56.812Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:07:56.812Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-12-07T17:07:56.814Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:07:56.815Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:07:56.815Z] [runtime-status] Running schedule in mode HTTPS {}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:07:56.818Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: IDLE
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:07:56.844Z] [worker-schedule-dfbec82f-9f63-44af-80ed-9b348c255f43]: IDLE
+[debug] [2019-12-07T17:07:56.850Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:07:56.879Z] [runtime-status] Ephemeral server survived. {}
+[info] [hosting] Rewriting /Styles/landing_page.css to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/bio.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/weekly-calendar.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[debug] [2019-12-07T17:07:56.926Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6961.sock"}
+[debug] [2019-12-07T17:07:56.927Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6961.sock"}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:07:56.930Z] [worker-schedule-2c14cad3-23aa-41ea-8492-6b903a074007]: IDLE
+[debug] [2019-12-07T17:07:56.931Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Styles/landing_page.css --> schedule
+[debug] [2019-12-07T17:07:56.931Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: BUSY
+[debug] [2019-12-07T17:07:56.932Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/bio.svg --> schedule
+[debug] [2019-12-07T17:07:56.932Z] [worker-schedule-2c14cad3-23aa-41ea-8492-6b903a074007]: BUSY
+[debug] [2019-12-07T17:07:56.932Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/weekly-calendar.svg --> schedule
+[debug] [2019-12-07T17:07:56.932Z] [worker-schedule-161eb733-ad4b-4647-9494-f17479cdeaf0]: BUSY
+[debug] [2019-12-07T17:07:56.932Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:07:56.934Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:07:56.934Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:07:56.934Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:07:56.934Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:07:56.935Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:07:56.935Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:07:56.935Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:07:56.936Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6958.sock"}
+[debug] [2019-12-07T17:07:56.936Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6958.sock"}
+[debug] [2019-12-07T17:07:56.937Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:07:56.938Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:07:56.938Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:07:56.938Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6957.sock"}
+[debug] [2019-12-07T17:07:56.939Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6957.sock"}
+[debug] [2019-12-07T17:07:56.944Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:07:56.944Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-12-07T17:07:56.948Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:07:56.948Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-12-07T17:07:56.950Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:07:56.950Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-12-07T17:07:56.951Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:07:56.952Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:07:56.953Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: IDLE
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:07:56.953Z] [worker-schedule-161eb733-ad4b-4647-9494-f17479cdeaf0]: IDLE
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:07:56.957Z] [worker-schedule-c105bd50-c625-4ecf-9a4d-253d0177892b]: IDLE
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:07:56.957Z] [worker-schedule-2c14cad3-23aa-41ea-8492-6b903a074007]: IDLE
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:07:56.982Z] [worker-schedule-e90a0ec5-d823-4c72-9713-ebb9008156e1]: IDLE
+[info] [hosting] Rewriting /index.js to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/RackMultipart20181001-23627-10zrji3-iPhone_X_Device_Frame_inline@2x.png to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/project-management.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/medal.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/meetup-map.png to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/facebook-logo-button.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[debug] [2019-12-07T17:07:57.075Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/index.js --> schedule
+[debug] [2019-12-07T17:07:57.076Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: BUSY
+[debug] [2019-12-07T17:07:57.077Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/RackMultipart20181001-23627-10zrji3-iPhone_X_Device_Frame_inline@2x.png --> schedule
+[debug] [2019-12-07T17:07:57.077Z] [worker-schedule-2c14cad3-23aa-41ea-8492-6b903a074007]: BUSY
+[debug] [2019-12-07T17:07:57.077Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/project-management.svg --> schedule
+[debug] [2019-12-07T17:07:57.077Z] [worker-schedule-161eb733-ad4b-4647-9494-f17479cdeaf0]: BUSY
+[debug] [2019-12-07T17:07:57.078Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:07:57.079Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:07:57.079Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:07:57.079Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:07:57.079Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:07:57.080Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:07:57.081Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:07:57.081Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:07:57.081Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6957.sock"}
+[debug] [2019-12-07T17:07:57.081Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6957.sock"}
+[debug] [2019-12-07T17:07:57.084Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:07:57.084Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:07:57.084Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:07:57.084Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6958.sock"}
+[debug] [2019-12-07T17:07:57.088Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6958.sock"}
+[debug] [2019-12-07T17:07:57.093Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:07:57.093Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-12-07T17:07:57.093Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:07:57.093Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-12-07T17:07:57.093Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/medal.svg --> schedule
+[debug] [2019-12-07T17:07:57.094Z] [worker-schedule-dfbec82f-9f63-44af-80ed-9b348c255f43]: BUSY
+[debug] [2019-12-07T17:07:57.094Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/meetup-map.png --> schedule
+[debug] [2019-12-07T17:07:57.094Z] [worker-schedule-e90a0ec5-d823-4c72-9713-ebb9008156e1]: BUSY
+[debug] [2019-12-07T17:07:57.094Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/facebook-logo-button.svg --> schedule
+[debug] [2019-12-07T17:07:57.094Z] [worker-schedule-c105bd50-c625-4ecf-9a4d-253d0177892b]: BUSY
+[debug] [2019-12-07T17:07:57.096Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:07:57.096Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-12-07T17:07:57.096Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:07:57.096Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:07:57.096Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:07:57.100Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6959.sock"}
+[debug] [2019-12-07T17:07:57.100Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6959.sock"}
+[debug] [2019-12-07T17:07:57.101Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:07:57.101Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:07:57.101Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:07:57.101Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6961.sock"}
+[debug] [2019-12-07T17:07:57.102Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6961.sock"}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:07:57.103Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: IDLE
+[debug] [2019-12-07T17:07:57.103Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:07:57.103Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:07:57.103Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:07:57.103Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6960.sock"}
+[debug] [2019-12-07T17:07:57.104Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6960.sock"}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:07:57.113Z] [worker-schedule-161eb733-ad4b-4647-9494-f17479cdeaf0]: IDLE
+[info] [hosting] Rewriting /Landing-Images/instagram.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/linkedin.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[debug] [2019-12-07T17:07:57.120Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:07:57.120Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-12-07T17:07:57.120Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:07:57.121Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-12-07T17:07:57.122Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:07:57.122Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:07:57.125Z] [worker-schedule-dfbec82f-9f63-44af-80ed-9b348c255f43]: IDLE
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:07:57.125Z] [worker-schedule-c105bd50-c625-4ecf-9a4d-253d0177892b]: IDLE
+[debug] [2019-12-07T17:07:57.133Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/instagram.svg --> schedule
+[debug] [2019-12-07T17:07:57.133Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: BUSY
+[debug] [2019-12-07T17:07:57.135Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/linkedin.svg --> schedule
+[debug] [2019-12-07T17:07:57.135Z] [worker-schedule-161eb733-ad4b-4647-9494-f17479cdeaf0]: BUSY
+[debug] [2019-12-07T17:07:57.136Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:07:57.136Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:07:57.137Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:07:57.137Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:07:57.137Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:07:57.139Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:07:57.139Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:07:57.139Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:07:57.139Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6958.sock"}
+[debug] [2019-12-07T17:07:57.139Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6958.sock"}
+[debug] [2019-12-07T17:07:57.143Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/sparkyevangelista/Documents/Litterly-Web/Backend/functions","node_version":"12.11.1"}
+[debug] [2019-12-07T17:07:57.143Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-12-07T17:07:57.147Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:07:57.147Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-12-07T17:07:57.147Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:07:57.147Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:07:57.148Z] [worker-schedule-2c14cad3-23aa-41ea-8492-6b903a074007]: IDLE
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:07:57.157Z] [worker-schedule-161eb733-ad4b-4647-9494-f17479cdeaf0]: IDLE
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:07:57.158Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: IDLE
+[debug] [2019-12-07T17:07:57.158Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.7.0","resolution":"/Users/sparkyevangelista/Documents/Litterly-Web/Backend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-07T17:07:57.158Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/sparkyevangelista/Documents/Litterly-Web/Backend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-07T17:07:57.158Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/sparkyevangelista/Documents/Litterly-Web/Backend/functions/node_modules/firebase-functions/lib/index.js"}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:07:57.201Z] [worker-schedule-e90a0ec5-d823-4c72-9713-ebb9008156e1]: IDLE
+[info] [hosting] Rewriting /Landing-Images/landing_pg_bg.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[debug] [2019-12-07T17:07:57.236Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/landing_pg_bg.svg --> schedule
+[debug] [2019-12-07T17:07:57.236Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: BUSY
+[debug] [2019-12-07T17:07:57.237Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:07:57.239Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:07:57.239Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:07:57.240Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:07:57.241Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:07:57.248Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:07:57.248Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:07:57.254Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: IDLE
+[info] [hosting] Rewriting /Landing-Images/landing_pg_bg.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[debug] [2019-12-07T17:07:57.260Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/landing_pg_bg.svg --> schedule
+[debug] [2019-12-07T17:07:57.260Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: BUSY
+[debug] [2019-12-07T17:07:57.264Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:07:57.266Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:07:57.266Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:07:57.266Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:07:57.266Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:07:57.271Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/sparkyevangelista/Documents/Litterly-Web/Backend/functions","node_version":"12.11.1"}
+[debug] [2019-12-07T17:07:57.272Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:07:57.272Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-12-07T17:07:57.272Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-12-07T17:07:57.274Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.7.0","resolution":"/Users/sparkyevangelista/Documents/Litterly-Web/Backend/functions/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-12-07T17:07:57.275Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/sparkyevangelista/Documents/Litterly-Web/Backend/functions/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-12-07T17:07:57.277Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.3.0","resolution":"/Users/sparkyevangelista/Documents/Litterly-Web/Backend/functions/node_modules/firebase-functions/lib/index.js"}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:07:57.282Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: IDLE
+[debug] [2019-12-07T17:07:57.637Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:07:57.637Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:07:57.637Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:07:57.642Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6962.sock"}
+[debug] [2019-12-07T17:07:57.642Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6962.sock"}
+[debug] [2019-12-07T17:07:57.651Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:07:57.654Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:07:57.660Z] [worker-schedule-3002e069-0ef6-46e2-8784-6ff8434fd1f3]: IDLE
+[debug] [2019-12-07T17:07:57.683Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:07:57.684Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:07:57.684Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:07:57.689Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6963.sock"}
+[debug] [2019-12-07T17:07:57.689Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6963.sock"}
+[debug] [2019-12-07T17:07:57.699Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:07:57.700Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:07:57.710Z] [worker-schedule-0197570b-4a14-493f-a744-764031d5e2da]: IDLE
+[info] [hosting] Rewriting /Styles/landing_page.css to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/bio.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/weekly-calendar.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[debug] [2019-12-07T17:07:58.581Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Styles/landing_page.css --> schedule
+[debug] [2019-12-07T17:07:58.581Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: BUSY
+[debug] [2019-12-07T17:07:58.581Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/bio.svg --> schedule
+[debug] [2019-12-07T17:07:58.581Z] [worker-schedule-2c14cad3-23aa-41ea-8492-6b903a074007]: BUSY
+[debug] [2019-12-07T17:07:58.582Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:07:58.582Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:07:58.582Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:07:58.582Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:07:58.582Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:07:58.582Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:07:58.583Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/weekly-calendar.svg --> schedule
+[debug] [2019-12-07T17:07:58.583Z] [worker-schedule-161eb733-ad4b-4647-9494-f17479cdeaf0]: BUSY
+[debug] [2019-12-07T17:07:58.583Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6957.sock"}
+[debug] [2019-12-07T17:07:58.583Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6957.sock"}
+[debug] [2019-12-07T17:07:58.584Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:07:58.584Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:07:58.586Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:07:58.586Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:07:58.586Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:07:58.586Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6958.sock"}
+[debug] [2019-12-07T17:07:58.587Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6958.sock"}
+[debug] [2019-12-07T17:07:58.588Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:07:58.588Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-12-07T17:07:58.589Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:07:58.589Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:07:58.591Z] [worker-schedule-2c14cad3-23aa-41ea-8492-6b903a074007]: IDLE
+[debug] [2019-12-07T17:07:58.591Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:07:58.592Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:07:58.592Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: IDLE
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:07:58.595Z] [worker-schedule-161eb733-ad4b-4647-9494-f17479cdeaf0]: IDLE
+[info] [hosting] Rewriting /index.js to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/RackMultipart20181001-23627-10zrji3-iPhone_X_Device_Frame_inline@2x.png to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/project-management.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/medal.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/meetup-map.png to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/facebook-logo-button.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[debug] [2019-12-07T17:07:58.662Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/index.js --> schedule
+[debug] [2019-12-07T17:07:58.662Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: BUSY
+[debug] [2019-12-07T17:07:58.662Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/RackMultipart20181001-23627-10zrji3-iPhone_X_Device_Frame_inline@2x.png --> schedule
+[debug] [2019-12-07T17:07:58.663Z] [worker-schedule-2c14cad3-23aa-41ea-8492-6b903a074007]: BUSY
+[debug] [2019-12-07T17:07:58.664Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:07:58.664Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:07:58.664Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:07:58.664Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:07:58.665Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:07:58.665Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:07:58.665Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:07:58.665Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:07:58.666Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6957.sock"}
+[debug] [2019-12-07T17:07:58.666Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6957.sock"}
+[debug] [2019-12-07T17:07:58.667Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/project-management.svg --> schedule
+[debug] [2019-12-07T17:07:58.667Z] [worker-schedule-161eb733-ad4b-4647-9494-f17479cdeaf0]: BUSY
+[debug] [2019-12-07T17:07:58.667Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/medal.svg --> schedule
+[debug] [2019-12-07T17:07:58.667Z] [worker-schedule-dfbec82f-9f63-44af-80ed-9b348c255f43]: BUSY
+[debug] [2019-12-07T17:07:58.667Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/meetup-map.png --> schedule
+[debug] [2019-12-07T17:07:58.667Z] [worker-schedule-e90a0ec5-d823-4c72-9713-ebb9008156e1]: BUSY
+[debug] [2019-12-07T17:07:58.670Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:07:58.670Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:07:58.670Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:07:58.670Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6958.sock"}
+[debug] [2019-12-07T17:07:58.671Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6958.sock"}
+[debug] [2019-12-07T17:07:58.672Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:07:58.672Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:07:58.672Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:07:58.672Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6959.sock"}
+[debug] [2019-12-07T17:07:58.672Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6959.sock"}
+[debug] [2019-12-07T17:07:58.673Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:07:58.673Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:07:58.673Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:07:58.673Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6960.sock"}
+[debug] [2019-12-07T17:07:58.674Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6960.sock"}
+[debug] [2019-12-07T17:07:58.675Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/facebook-logo-button.svg --> schedule
+[debug] [2019-12-07T17:07:58.675Z] [worker-schedule-c105bd50-c625-4ecf-9a4d-253d0177892b]: BUSY
+[debug] [2019-12-07T17:07:58.680Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:07:58.680Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:07:58.680Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:07:58.681Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6961.sock"}
+[debug] [2019-12-07T17:07:58.681Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6961.sock"}
+[debug] [2019-12-07T17:07:58.682Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:07:58.682Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-12-07T17:07:58.682Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:07:58.682Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:07:58.686Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: IDLE
+[debug] [2019-12-07T17:07:58.686Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:07:58.686Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-12-07T17:07:58.687Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:07:58.687Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-12-07T17:07:58.689Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:07:58.690Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:07:58.695Z] [worker-schedule-161eb733-ad4b-4647-9494-f17479cdeaf0]: IDLE
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:07:58.695Z] [worker-schedule-dfbec82f-9f63-44af-80ed-9b348c255f43]: IDLE
+[debug] [2019-12-07T17:07:58.696Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:07:58.696Z] [runtime-status] Ephemeral server survived. {}
+[info] [hosting] Rewriting /Landing-Images/instagram.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:07:58.703Z] [worker-schedule-c105bd50-c625-4ecf-9a4d-253d0177892b]: IDLE
+[info] [hosting] Rewriting /Landing-Images/linkedin.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[debug] [2019-12-07T17:07:58.707Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/instagram.svg --> schedule
+[debug] [2019-12-07T17:07:58.707Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: BUSY
+[debug] [2019-12-07T17:07:58.708Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:07:58.709Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:07:58.709Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:07:58.709Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/linkedin.svg --> schedule
+[debug] [2019-12-07T17:07:58.709Z] [worker-schedule-161eb733-ad4b-4647-9494-f17479cdeaf0]: BUSY
+[debug] [2019-12-07T17:07:58.710Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:07:58.710Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:07:58.714Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:07:58.715Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:07:58.715Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:07:58.715Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6958.sock"}
+[debug] [2019-12-07T17:07:58.715Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6958.sock"}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:07:58.718Z] [worker-schedule-2c14cad3-23aa-41ea-8492-6b903a074007]: IDLE
+[debug] [2019-12-07T17:07:58.727Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:07:58.727Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:07:58.729Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: IDLE
+[debug] [2019-12-07T17:07:58.729Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:07:58.730Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:07:58.734Z] [worker-schedule-161eb733-ad4b-4647-9494-f17479cdeaf0]: IDLE
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:07:58.737Z] [worker-schedule-e90a0ec5-d823-4c72-9713-ebb9008156e1]: IDLE
+[info] [hosting] Rewriting /Landing-Images/landing_pg_bg.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[debug] [2019-12-07T17:07:58.743Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/landing_pg_bg.svg --> schedule
+[debug] [2019-12-07T17:07:58.743Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: BUSY
+[debug] [2019-12-07T17:07:58.744Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:07:58.744Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:07:58.744Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:07:58.745Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:07:58.745Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:07:58.747Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:07:58.747Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:07:58.760Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: IDLE
+[info] [hosting] Rewriting /Styles/landing_page.css to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/bio.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/weekly-calendar.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[debug] [2019-12-07T17:08:25.846Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Styles/landing_page.css --> schedule
+[debug] [2019-12-07T17:08:25.846Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: BUSY
+[debug] [2019-12-07T17:08:25.848Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/bio.svg --> schedule
+[debug] [2019-12-07T17:08:25.848Z] [worker-schedule-2c14cad3-23aa-41ea-8492-6b903a074007]: BUSY
+[debug] [2019-12-07T17:08:25.850Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:08:25.851Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:08:25.851Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:08:25.851Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:08:25.852Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:08:25.852Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:08:25.853Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:08:25.853Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:08:25.853Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6957.sock"}
+[debug] [2019-12-07T17:08:25.854Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6957.sock"}
+[debug] [2019-12-07T17:08:25.858Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/weekly-calendar.svg --> schedule
+[debug] [2019-12-07T17:08:25.858Z] [worker-schedule-161eb733-ad4b-4647-9494-f17479cdeaf0]: BUSY
+[debug] [2019-12-07T17:08:25.858Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:08:25.858Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:08:25.858Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-12-07T17:08:25.861Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-12-07T17:08:25.862Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:08:25.863Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:08:25.863Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:08:25.863Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6958.sock"}
+[debug] [2019-12-07T17:08:25.864Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6958.sock"}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:08:25.866Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: IDLE
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:08:25.868Z] [worker-schedule-2c14cad3-23aa-41ea-8492-6b903a074007]: IDLE
+[debug] [2019-12-07T17:08:25.873Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:08:25.873Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:08:25.876Z] [worker-schedule-161eb733-ad4b-4647-9494-f17479cdeaf0]: IDLE
+[info] [hosting] Rewriting /index.js to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/RackMultipart20181001-23627-10zrji3-iPhone_X_Device_Frame_inline@2x.png to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/project-management.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/medal.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/facebook-logo-button.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/meetup-map.png to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[debug] [2019-12-07T17:08:25.989Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/index.js --> schedule
+[debug] [2019-12-07T17:08:25.989Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: BUSY
+[debug] [2019-12-07T17:08:25.989Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/RackMultipart20181001-23627-10zrji3-iPhone_X_Device_Frame_inline@2x.png --> schedule
+[debug] [2019-12-07T17:08:25.989Z] [worker-schedule-2c14cad3-23aa-41ea-8492-6b903a074007]: BUSY
+[debug] [2019-12-07T17:08:25.990Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:08:25.990Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:08:25.990Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:08:25.991Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/project-management.svg --> schedule
+[debug] [2019-12-07T17:08:25.991Z] [worker-schedule-161eb733-ad4b-4647-9494-f17479cdeaf0]: BUSY
+[debug] [2019-12-07T17:08:25.991Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:08:25.991Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:08:25.992Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:08:25.992Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:08:25.992Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:08:25.992Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6957.sock"}
+[debug] [2019-12-07T17:08:25.994Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6957.sock"}
+[debug] [2019-12-07T17:08:25.995Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/medal.svg --> schedule
+[debug] [2019-12-07T17:08:25.995Z] [worker-schedule-dfbec82f-9f63-44af-80ed-9b348c255f43]: BUSY
+[debug] [2019-12-07T17:08:25.995Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/facebook-logo-button.svg --> schedule
+[debug] [2019-12-07T17:08:25.995Z] [worker-schedule-e90a0ec5-d823-4c72-9713-ebb9008156e1]: BUSY
+[debug] [2019-12-07T17:08:25.998Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:08:25.998Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:08:25.998Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:08:25.998Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6958.sock"}
+[debug] [2019-12-07T17:08:25.999Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6958.sock"}
+[debug] [2019-12-07T17:08:25.999Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:08:25.999Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:08:25.999Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:08:25.999Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6959.sock"}
+[debug] [2019-12-07T17:08:26.000Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6959.sock"}
+[debug] [2019-12-07T17:08:26.000Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:08:26.000Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:08:26.000Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:08:26.000Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6960.sock"}
+[debug] [2019-12-07T17:08:26.001Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6960.sock"}
+[debug] [2019-12-07T17:08:26.001Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/meetup-map.png --> schedule
+[debug] [2019-12-07T17:08:26.001Z] [worker-schedule-c105bd50-c625-4ecf-9a4d-253d0177892b]: BUSY
+[debug] [2019-12-07T17:08:26.004Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:08:26.005Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:08:26.005Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:08:26.005Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6961.sock"}
+[debug] [2019-12-07T17:08:26.005Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6961.sock"}
+[debug] [2019-12-07T17:08:26.006Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:08:26.006Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-12-07T17:08:26.006Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:08:26.006Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:08:26.012Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: IDLE
+[debug] [2019-12-07T17:08:26.012Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:08:26.013Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-12-07T17:08:26.013Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:08:26.014Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-12-07T17:08:26.014Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:08:26.014Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:08:26.017Z] [worker-schedule-161eb733-ad4b-4647-9494-f17479cdeaf0]: IDLE
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:08:26.018Z] [worker-schedule-dfbec82f-9f63-44af-80ed-9b348c255f43]: IDLE
+[debug] [2019-12-07T17:08:26.020Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:08:26.021Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:08:26.023Z] [worker-schedule-e90a0ec5-d823-4c72-9713-ebb9008156e1]: IDLE
+[info] [hosting] Rewriting /Landing-Images/instagram.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/linkedin.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[debug] [2019-12-07T17:08:26.031Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/instagram.svg --> schedule
+[debug] [2019-12-07T17:08:26.031Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: BUSY
+[debug] [2019-12-07T17:08:26.032Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/linkedin.svg --> schedule
+[debug] [2019-12-07T17:08:26.032Z] [worker-schedule-161eb733-ad4b-4647-9494-f17479cdeaf0]: BUSY
+[debug] [2019-12-07T17:08:26.033Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:08:26.033Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:08:26.033Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:08:26.034Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:08:26.034Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:08:26.035Z] [worker-schedule-2c14cad3-23aa-41ea-8492-6b903a074007]: IDLE
+[debug] [2019-12-07T17:08:26.037Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:08:26.037Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:08:26.037Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:08:26.038Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6958.sock"}
+[debug] [2019-12-07T17:08:26.038Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6958.sock"}
+[debug] [2019-12-07T17:08:26.040Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:08:26.040Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-12-07T17:08:26.041Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:08:26.041Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:08:26.043Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: IDLE
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:08:26.045Z] [worker-schedule-161eb733-ad4b-4647-9494-f17479cdeaf0]: IDLE
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:08:26.050Z] [worker-schedule-c105bd50-c625-4ecf-9a4d-253d0177892b]: IDLE
+[info] [hosting] Rewriting /Landing-Images/landing_pg_bg.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[debug] [2019-12-07T17:08:26.073Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/landing_pg_bg.svg --> schedule
+[debug] [2019-12-07T17:08:26.073Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: BUSY
+[debug] [2019-12-07T17:08:26.073Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:08:26.074Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:08:26.074Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:08:26.074Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:08:26.075Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:08:26.076Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:08:26.077Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:08:26.086Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: IDLE
+[info] [hosting] Rewriting /Styles/landing_page.css to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[debug] [2019-12-07T17:08:27.734Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Styles/landing_page.css --> schedule
+[debug] [2019-12-07T17:08:27.734Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: BUSY
+[debug] [2019-12-07T17:08:27.735Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:08:27.735Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:08:27.735Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:08:27.736Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:08:27.736Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:08:27.738Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:08:27.739Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:08:27.742Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: IDLE
+[info] [hosting] Rewriting /Styles/landing_page.css to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/bio.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/weekly-calendar.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[debug] [2019-12-07T17:10:40.817Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/bio.svg --> schedule
+[debug] [2019-12-07T17:10:40.818Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: BUSY
+[debug] [2019-12-07T17:10:40.819Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Styles/landing_page.css --> schedule
+[debug] [2019-12-07T17:10:40.819Z] [worker-schedule-2c14cad3-23aa-41ea-8492-6b903a074007]: BUSY
+[debug] [2019-12-07T17:10:40.820Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:10:40.820Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:10:40.820Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:10:40.821Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:10:40.824Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:10:40.830Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:10:40.831Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:10:40.831Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:10:40.832Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6957.sock"}
+[debug] [2019-12-07T17:10:40.832Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6957.sock"}
+[debug] [2019-12-07T17:10:40.836Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:10:40.836Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-12-07T17:10:40.837Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/weekly-calendar.svg --> schedule
+[debug] [2019-12-07T17:10:40.837Z] [worker-schedule-161eb733-ad4b-4647-9494-f17479cdeaf0]: BUSY
+[debug] [2019-12-07T17:10:40.838Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:10:40.838Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-12-07T17:10:40.839Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:10:40.839Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:10:40.839Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:10:40.839Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6958.sock"}
+[debug] [2019-12-07T17:10:40.840Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6958.sock"}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:10:40.844Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: IDLE
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:10:40.845Z] [worker-schedule-2c14cad3-23aa-41ea-8492-6b903a074007]: IDLE
+[debug] [2019-12-07T17:10:40.846Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:10:40.846Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:10:40.847Z] [worker-schedule-161eb733-ad4b-4647-9494-f17479cdeaf0]: IDLE
+[info] [hosting] Rewriting /index.js to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/RackMultipart20181001-23627-10zrji3-iPhone_X_Device_Frame_inline@2x.png to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/project-management.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/medal.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[debug] [2019-12-07T17:10:40.979Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/index.js --> schedule
+[debug] [2019-12-07T17:10:40.979Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: BUSY
+[info] [hosting] Rewriting /Landing-Images/meetup-map.png to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/facebook-logo-button.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[debug] [2019-12-07T17:10:40.982Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:10:40.983Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:10:40.983Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:10:40.983Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:10:40.983Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:10:40.984Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/RackMultipart20181001-23627-10zrji3-iPhone_X_Device_Frame_inline@2x.png --> schedule
+[debug] [2019-12-07T17:10:40.984Z] [worker-schedule-2c14cad3-23aa-41ea-8492-6b903a074007]: BUSY
+[debug] [2019-12-07T17:10:40.984Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/project-management.svg --> schedule
+[debug] [2019-12-07T17:10:40.984Z] [worker-schedule-161eb733-ad4b-4647-9494-f17479cdeaf0]: BUSY
+[debug] [2019-12-07T17:10:40.986Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:10:40.986Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:10:40.986Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:10:40.986Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6957.sock"}
+[debug] [2019-12-07T17:10:40.987Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6957.sock"}
+[debug] [2019-12-07T17:10:40.987Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:10:40.987Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:10:40.987Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:10:40.987Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6958.sock"}
+[debug] [2019-12-07T17:10:40.988Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6958.sock"}
+[debug] [2019-12-07T17:10:40.988Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/medal.svg --> schedule
+[debug] [2019-12-07T17:10:40.988Z] [worker-schedule-dfbec82f-9f63-44af-80ed-9b348c255f43]: BUSY
+[debug] [2019-12-07T17:10:40.992Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:10:40.994Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-12-07T17:10:40.994Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:10:40.995Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:10:40.995Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:10:40.995Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6959.sock"}
+[debug] [2019-12-07T17:10:40.995Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6959.sock"}
+[debug] [2019-12-07T17:10:40.996Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/meetup-map.png --> schedule
+[debug] [2019-12-07T17:10:40.996Z] [worker-schedule-e90a0ec5-d823-4c72-9713-ebb9008156e1]: BUSY
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:10:41.000Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: IDLE
+[debug] [2019-12-07T17:10:41.000Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:10:41.001Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:10:41.001Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:10:41.001Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6960.sock"}
+[debug] [2019-12-07T17:10:41.002Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6960.sock"}
+[debug] [2019-12-07T17:10:41.002Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:10:41.002Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-12-07T17:10:41.003Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:10:41.003Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-12-07T17:10:41.003Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/facebook-logo-button.svg --> schedule
+[debug] [2019-12-07T17:10:41.003Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: BUSY
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:10:41.007Z] [worker-schedule-161eb733-ad4b-4647-9494-f17479cdeaf0]: IDLE
+[debug] [2019-12-07T17:10:41.009Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:10:41.009Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-12-07T17:10:41.013Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:10:41.014Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:10:41.014Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:10:41.014Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:10:41.015Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:10:41.015Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:10:41.015Z] [runtime-status] Ephemeral server survived. {}
+[info] [hosting] Rewriting /Landing-Images/instagram.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:10:41.019Z] [worker-schedule-dfbec82f-9f63-44af-80ed-9b348c255f43]: IDLE
+[info] [hosting] Rewriting /Landing-Images/linkedin.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[debug] [2019-12-07T17:10:41.026Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:10:41.026Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-12-07T17:10:41.029Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/instagram.svg --> schedule
+[debug] [2019-12-07T17:10:41.029Z] [worker-schedule-161eb733-ad4b-4647-9494-f17479cdeaf0]: BUSY
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:10:41.030Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: IDLE
+[debug] [2019-12-07T17:10:41.031Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:10:41.032Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:10:41.032Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:10:41.032Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6958.sock"}
+[debug] [2019-12-07T17:10:41.033Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6958.sock"}
+[debug] [2019-12-07T17:10:41.034Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/linkedin.svg --> schedule
+[debug] [2019-12-07T17:10:41.034Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: BUSY
+[debug] [2019-12-07T17:10:41.039Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:10:41.039Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:10:41.039Z] [worker-schedule-2c14cad3-23aa-41ea-8492-6b903a074007]: IDLE
+[debug] [2019-12-07T17:10:41.040Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:10:41.041Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:10:41.042Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:10:41.042Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:10:41.042Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:10:41.048Z] [worker-schedule-161eb733-ad4b-4647-9494-f17479cdeaf0]: IDLE
+[debug] [2019-12-07T17:10:41.051Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:10:41.051Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:10:41.053Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: IDLE
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:10:41.057Z] [worker-schedule-e90a0ec5-d823-4c72-9713-ebb9008156e1]: IDLE
+[info] [hosting] Rewriting /Landing-Images/landing_pg_bg.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[debug] [2019-12-07T17:10:41.137Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/landing_pg_bg.svg --> schedule
+[debug] [2019-12-07T17:10:41.137Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: BUSY
+[debug] [2019-12-07T17:10:41.138Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:10:41.138Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:10:41.139Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:10:41.139Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:10:41.139Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:10:41.143Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:10:41.144Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:10:41.158Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: IDLE
+[info] [hosting] Rewriting /Styles/landing_page.css to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/bio.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/weekly-calendar.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[debug] [2019-12-07T17:11:48.424Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Styles/landing_page.css --> schedule
+[debug] [2019-12-07T17:11:48.424Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: BUSY
+[debug] [2019-12-07T17:11:48.424Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/bio.svg --> schedule
+[debug] [2019-12-07T17:11:48.424Z] [worker-schedule-2c14cad3-23aa-41ea-8492-6b903a074007]: BUSY
+[debug] [2019-12-07T17:11:48.426Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:11:48.427Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:11:48.427Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:11:48.427Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:11:48.428Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:11:48.428Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:11:48.428Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6957.sock"}
+[debug] [2019-12-07T17:11:48.429Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6957.sock"}
+[debug] [2019-12-07T17:11:48.430Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/weekly-calendar.svg --> schedule
+[debug] [2019-12-07T17:11:48.431Z] [worker-schedule-161eb733-ad4b-4647-9494-f17479cdeaf0]: BUSY
+[debug] [2019-12-07T17:11:48.432Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:11:48.432Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:11:48.433Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:11:48.433Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:11:48.433Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:11:48.433Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6958.sock"}
+[debug] [2019-12-07T17:11:48.434Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6958.sock"}
+[debug] [2019-12-07T17:11:48.437Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:11:48.438Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-12-07T17:11:48.441Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:11:48.441Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-12-07T17:11:48.443Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:11:48.443Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:11:48.444Z] [worker-schedule-2c14cad3-23aa-41ea-8492-6b903a074007]: IDLE
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:11:48.446Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: IDLE
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:11:48.447Z] [worker-schedule-161eb733-ad4b-4647-9494-f17479cdeaf0]: IDLE
+[info] [hosting] Rewriting /index.js to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/RackMultipart20181001-23627-10zrji3-iPhone_X_Device_Frame_inline@2x.png to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/project-management.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/medal.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/meetup-map.png to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/facebook-logo-button.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[debug] [2019-12-07T17:11:48.589Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/index.js --> schedule
+[debug] [2019-12-07T17:11:48.589Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: BUSY
+[debug] [2019-12-07T17:11:48.590Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/RackMultipart20181001-23627-10zrji3-iPhone_X_Device_Frame_inline@2x.png --> schedule
+[debug] [2019-12-07T17:11:48.590Z] [worker-schedule-2c14cad3-23aa-41ea-8492-6b903a074007]: BUSY
+[debug] [2019-12-07T17:11:48.591Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/project-management.svg --> schedule
+[debug] [2019-12-07T17:11:48.591Z] [worker-schedule-161eb733-ad4b-4647-9494-f17479cdeaf0]: BUSY
+[debug] [2019-12-07T17:11:48.593Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:11:48.593Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:11:48.593Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:11:48.593Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:11:48.594Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:11:48.595Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:11:48.595Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:11:48.595Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:11:48.596Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6957.sock"}
+[debug] [2019-12-07T17:11:48.596Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6957.sock"}
+[debug] [2019-12-07T17:11:48.599Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:11:48.600Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:11:48.600Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:11:48.600Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6958.sock"}
+[debug] [2019-12-07T17:11:48.601Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6958.sock"}
+[debug] [2019-12-07T17:11:48.608Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/medal.svg --> schedule
+[debug] [2019-12-07T17:11:48.608Z] [worker-schedule-dfbec82f-9f63-44af-80ed-9b348c255f43]: BUSY
+[debug] [2019-12-07T17:11:48.612Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:11:48.615Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:11:48.615Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:11:48.615Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6959.sock"}
+[debug] [2019-12-07T17:11:48.617Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6959.sock"}
+[debug] [2019-12-07T17:11:48.619Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/meetup-map.png --> schedule
+[debug] [2019-12-07T17:11:48.619Z] [worker-schedule-e90a0ec5-d823-4c72-9713-ebb9008156e1]: BUSY
+[debug] [2019-12-07T17:11:48.623Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/facebook-logo-button.svg --> schedule
+[debug] [2019-12-07T17:11:48.623Z] [worker-schedule-c105bd50-c625-4ecf-9a4d-253d0177892b]: BUSY
+[debug] [2019-12-07T17:11:48.626Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:11:48.626Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-12-07T17:11:48.626Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:11:48.626Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-12-07T17:11:48.626Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:11:48.626Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-12-07T17:11:48.628Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:11:48.628Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:11:48.629Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:11:48.629Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6960.sock"}
+[debug] [2019-12-07T17:11:48.630Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6960.sock"}
+[debug] [2019-12-07T17:11:48.630Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:11:48.631Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:11:48.631Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:11:48.633Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6961.sock"}
+[debug] [2019-12-07T17:11:48.635Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6961.sock"}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:11:48.639Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: IDLE
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:11:48.640Z] [worker-schedule-161eb733-ad4b-4647-9494-f17479cdeaf0]: IDLE
+[debug] [2019-12-07T17:11:48.646Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:11:48.646Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:11:48.648Z] [worker-schedule-dfbec82f-9f63-44af-80ed-9b348c255f43]: IDLE
+[debug] [2019-12-07T17:11:48.649Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:11:48.649Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-12-07T17:11:48.650Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:11:48.650Z] [runtime-status] Ephemeral server survived. {}
+[info] [hosting] Rewriting /Landing-Images/instagram.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/linkedin.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:11:48.661Z] [worker-schedule-c105bd50-c625-4ecf-9a4d-253d0177892b]: IDLE
+[debug] [2019-12-07T17:11:48.663Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/instagram.svg --> schedule
+[debug] [2019-12-07T17:11:48.663Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: BUSY
+[debug] [2019-12-07T17:11:48.664Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/linkedin.svg --> schedule
+[debug] [2019-12-07T17:11:48.664Z] [worker-schedule-161eb733-ad4b-4647-9494-f17479cdeaf0]: BUSY
+[debug] [2019-12-07T17:11:48.667Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:11:48.667Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:11:48.667Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:11:48.669Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:11:48.671Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:11:48.673Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:11:48.673Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:11:48.674Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:11:48.674Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6958.sock"}
+[debug] [2019-12-07T17:11:48.674Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6958.sock"}
+[debug] [2019-12-07T17:11:48.679Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:11:48.679Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:11:48.684Z] [worker-schedule-2c14cad3-23aa-41ea-8492-6b903a074007]: IDLE
+[debug] [2019-12-07T17:11:48.686Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:11:48.686Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:11:48.689Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: IDLE
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:11:48.691Z] [worker-schedule-161eb733-ad4b-4647-9494-f17479cdeaf0]: IDLE
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:11:48.701Z] [worker-schedule-e90a0ec5-d823-4c72-9713-ebb9008156e1]: IDLE
+[info] [hosting] Rewriting /Landing-Images/landing_pg_bg.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[debug] [2019-12-07T17:11:48.850Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/landing_pg_bg.svg --> schedule
+[debug] [2019-12-07T17:11:48.851Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: BUSY
+[debug] [2019-12-07T17:11:48.851Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:11:48.852Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:11:48.852Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:11:48.853Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:11:48.853Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:11:48.855Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:11:48.856Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:11:48.864Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: IDLE
+[info] [hosting] Rewriting /Styles/landing_page.css to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/bio.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/weekly-calendar.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[debug] [2019-12-07T17:12:05.368Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Styles/landing_page.css --> schedule
+[debug] [2019-12-07T17:12:05.369Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: BUSY
+[debug] [2019-12-07T17:12:05.369Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/bio.svg --> schedule
+[debug] [2019-12-07T17:12:05.369Z] [worker-schedule-2c14cad3-23aa-41ea-8492-6b903a074007]: BUSY
+[debug] [2019-12-07T17:12:05.370Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:12:05.370Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:12:05.370Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:12:05.371Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:12:05.373Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:12:05.375Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:12:05.375Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:12:05.375Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:12:05.375Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6957.sock"}
+[debug] [2019-12-07T17:12:05.376Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6957.sock"}
+[debug] [2019-12-07T17:12:05.378Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:12:05.378Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-12-07T17:12:05.379Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/weekly-calendar.svg --> schedule
+[debug] [2019-12-07T17:12:05.379Z] [worker-schedule-161eb733-ad4b-4647-9494-f17479cdeaf0]: BUSY
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:12:05.382Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: IDLE
+[debug] [2019-12-07T17:12:05.383Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:12:05.384Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-12-07T17:12:05.385Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:12:05.385Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:12:05.385Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:12:05.385Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6958.sock"}
+[debug] [2019-12-07T17:12:05.387Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6958.sock"}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:12:05.392Z] [worker-schedule-2c14cad3-23aa-41ea-8492-6b903a074007]: IDLE
+[debug] [2019-12-07T17:12:05.392Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:12:05.392Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:12:05.395Z] [worker-schedule-161eb733-ad4b-4647-9494-f17479cdeaf0]: IDLE
+[info] [hosting] Rewriting /index.js to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/RackMultipart20181001-23627-10zrji3-iPhone_X_Device_Frame_inline@2x.png to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/project-management.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/medal.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/meetup-map.png to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[info] [hosting] Rewriting /Landing-Images/facebook-logo-button.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[debug] [2019-12-07T17:12:05.510Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/index.js --> schedule
+[debug] [2019-12-07T17:12:05.510Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: BUSY
+[debug] [2019-12-07T17:12:05.513Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:12:05.513Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:12:05.514Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:12:05.518Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:12:05.519Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:12:05.521Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/RackMultipart20181001-23627-10zrji3-iPhone_X_Device_Frame_inline@2x.png --> schedule
+[debug] [2019-12-07T17:12:05.522Z] [worker-schedule-2c14cad3-23aa-41ea-8492-6b903a074007]: BUSY
+[debug] [2019-12-07T17:12:05.522Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:12:05.522Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/project-management.svg --> schedule
+[debug] [2019-12-07T17:12:05.522Z] [worker-schedule-161eb733-ad4b-4647-9494-f17479cdeaf0]: BUSY
+[debug] [2019-12-07T17:12:05.522Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-12-07T17:12:05.524Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:12:05.524Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:12:05.524Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:12:05.524Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6957.sock"}
+[debug] [2019-12-07T17:12:05.524Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6957.sock"}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:12:05.525Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: IDLE
+[debug] [2019-12-07T17:12:05.525Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:12:05.525Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:12:05.525Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:12:05.525Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6958.sock"}
+[debug] [2019-12-07T17:12:05.526Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6958.sock"}
+[debug] [2019-12-07T17:12:05.533Z] [runtime-status] Ephemeral server used! {}
+[info] [hosting] Rewriting /Landing-Images/instagram.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[debug] [2019-12-07T17:12:05.534Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-12-07T17:12:05.535Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:12:05.535Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:12:05.540Z] [worker-schedule-161eb733-ad4b-4647-9494-f17479cdeaf0]: IDLE
+[debug] [2019-12-07T17:12:05.552Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/medal.svg --> schedule
+[debug] [2019-12-07T17:12:05.552Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: BUSY
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:12:05.554Z] [worker-schedule-2c14cad3-23aa-41ea-8492-6b903a074007]: IDLE
+[info] [hosting] Rewriting /Landing-Images/linkedin.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[debug] [2019-12-07T17:12:05.556Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:12:05.556Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:12:05.556Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:12:05.557Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:12:05.557Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:12:05.560Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/meetup-map.png --> schedule
+[debug] [2019-12-07T17:12:05.560Z] [worker-schedule-2c14cad3-23aa-41ea-8492-6b903a074007]: BUSY
+[debug] [2019-12-07T17:12:05.561Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:12:05.561Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:12:05.561Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:12:05.561Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:12:05.561Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-12-07T17:12:05.561Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6957.sock"}
+[debug] [2019-12-07T17:12:05.562Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6957.sock"}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:12:05.565Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: IDLE
+[debug] [2019-12-07T17:12:05.565Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:12:05.567Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-12-07T17:12:05.577Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/facebook-logo-button.svg --> schedule
+[debug] [2019-12-07T17:12:05.577Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: BUSY
+[debug] [2019-12-07T17:12:05.579Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:12:05.579Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:12:05.579Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:12:05.580Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/instagram.svg --> schedule
+[debug] [2019-12-07T17:12:05.580Z] [worker-schedule-161eb733-ad4b-4647-9494-f17479cdeaf0]: BUSY
+[debug] [2019-12-07T17:12:05.581Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/linkedin.svg --> schedule
+[debug] [2019-12-07T17:12:05.581Z] [worker-schedule-dfbec82f-9f63-44af-80ed-9b348c255f43]: BUSY
+[debug] [2019-12-07T17:12:05.581Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:12:05.581Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:12:05.582Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:12:05.583Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:12:05.583Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:12:05.583Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6958.sock"}
+[debug] [2019-12-07T17:12:05.583Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6958.sock"}
+[debug] [2019-12-07T17:12:05.587Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:12:05.587Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:12:05.587Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:12:05.587Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6959.sock"}
+[debug] [2019-12-07T17:12:05.588Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6959.sock"}
+[debug] [2019-12-07T17:12:05.591Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:12:05.591Z] [runtime-status] Ephemeral server survived. {}
+[debug] [2019-12-07T17:12:05.598Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:12:05.599Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:12:05.601Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: IDLE
+[debug] [2019-12-07T17:12:05.602Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:12:05.602Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:12:05.606Z] [worker-schedule-161eb733-ad4b-4647-9494-f17479cdeaf0]: IDLE
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:12:05.611Z] [worker-schedule-dfbec82f-9f63-44af-80ed-9b348c255f43]: IDLE
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:12:05.624Z] [worker-schedule-2c14cad3-23aa-41ea-8492-6b903a074007]: IDLE
+[info] [hosting] Rewriting /Landing-Images/landing_pg_bg.svg to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[debug] [2019-12-07T17:12:05.639Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/Landing-Images/landing_pg_bg.svg --> schedule
+[debug] [2019-12-07T17:12:05.639Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: BUSY
+[debug] [2019-12-07T17:12:05.640Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:12:05.641Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:12:05.641Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:12:05.641Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:12:05.641Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:12:05.649Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:12:05.649Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:12:05.660Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: IDLE
+[info] [hosting] Rewriting /apiKeys/credentials.json to http://localhost:5001/fir-signintest-79b2c/us-central1/schedule for local Function schedule
+[debug] [2019-12-07T17:12:05.715Z] Accepted request GET /fir-signintest-79b2c/us-central1/schedule/apiKeys/credentials.json --> schedule
+[debug] [2019-12-07T17:12:05.715Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: BUSY
+[debug] [2019-12-07T17:12:05.716Z] [runtime-status] Trigger "schedule" has been found, beginning invocation! {}
+[info] i  functions: Beginning execution of "schedule"
+[debug] [2019-12-07T17:12:05.717Z] [runtime-status]  {"httpsTrigger":{},"name":"schedule","entryPoint":"schedule"}
+[debug] [2019-12-07T17:12:05.717Z] [runtime-status] Running schedule in mode HTTPS {}
+[debug] [2019-12-07T17:12:05.717Z] {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:12:05.718Z] [functions] Runtime ready! Sending request! {"socketPath":"/var/folders/4n/yjjvct3x6kz9cjwqmgn5_mbw0000gn/T/firebase_emulator_invocation_6956.sock"}
+[debug] [2019-12-07T17:12:05.724Z] [runtime-status] Ephemeral server used! {}
+[debug] [2019-12-07T17:12:05.725Z] [runtime-status] Ephemeral server survived. {}
+[info] i  functions: Finished "schedule" in ~1s
+[debug] [2019-12-07T17:12:05.734Z] [worker-schedule-9d44df5d-0465-4774-8a42-587b249ed81a]: IDLE

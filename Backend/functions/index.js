@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json())
 
-
+app.use('/sign_up', require('../controllers/sign_up.js'));
 //viewed on the meetups scheduler
 app.use('/view_meetup', require('../controllers/view_meetups.js')); //tested
 

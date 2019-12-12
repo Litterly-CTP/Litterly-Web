@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 
-    <meta name="google-signin-client_id" content="979588441689-cnbsdgrune7b3su4akrk7gulbv4h5kbd.apps.googleusercontent.com">
+    <!-- google signin -->
+    <!-- key goes in content -->
+    <meta id="google_signin" name="google-signin-client_id" content="">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
@@ -17,7 +19,6 @@
     <!-- Custom Style Sheet -->
     <link rel="stylesheet" href="/Styles/landing_page.css">
 
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
 
     <title>Litterly</title>
 </head>
@@ -139,7 +140,44 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script src="index.js"></script>
+    <script src="index.js"></script> //
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <!-- Ill work on this {sparky} -->
+    <!-- <script type="module">
+        //getting client id for google signin
+        //TODO: THIS FILE IN YOUR LOCAL REPO  // const google_signin_credentials = require("../apiKeys/credentials.json")
+        import google_signin_credentials from "../apiKeys/credentials.json";
+        console.log(google_signin_credentials);
+        let google_sign_in = document.getElementById('google_signin');
+        google_sign_in.content = google_signin["google-signin-client_id"];
+
+        function onSignIn(googleUser) {
+            var profile = googleUser.getBasicProfile();
+
+            let body = {
+                id: profile.getId(), // Do not send to your backend! Use an ID token instead.
+                name: profile.getName(),
+                url: profile.getImageUrl(),
+                email: profile.getEmail()
+            }
+
+            //storing email to get user information in the profile page
+            localStorage.setItem("email", email);
+
+            //getting user to sign up
+            const Http = new XMLHttpRequest();
+            const url = 'http://localhost:5000/sign_up';
+            Http.open("GET", url);
+            Http.send(body);
+
+            Http.onreadystatechange = (e) => {
+                console.log(Http.responseText)
+            }
+
+            //TODO: if the user sucessfully signs in it moves to the next page
+        }
+    </script> -->
 
 </body>
 
